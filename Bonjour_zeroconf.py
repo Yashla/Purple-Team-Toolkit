@@ -17,6 +17,7 @@ def main():
         input("Press Enter to stop...")
     except KeyboardInterrupt:
         pass
+    
     finally:
         zeroconf.close()
 

@@ -1,4 +1,4 @@
-#!/Users/yash/Documents/Uni/FYP coding/FYP-scan-devices-on-network/.venv/bin/python3.12
+#!/home/yash/Documents/GitHub/FYP-scan-devices-on-network/.venv/bin/python3
 #
 # This file is part of pysmi software.
 #

@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/yash/Documents/Uni/FYP coding/FYP-scan-devices-on-network/.venv"
+set -gx VIRTUAL_ENV "/home/yash/Documents/GitHub/FYP-scan-devices-on-network/.venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

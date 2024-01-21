@@ -1,0 +1,12 @@
+packages I needed to install:
+
+Scan_ip.py: --- this has to be ran as root fs 
+pip install scapy 
+
+
+
+what works :
+Scan_ip
+upnpscans_done.py
+
+SNMP not done need to figure out snmp vm 
