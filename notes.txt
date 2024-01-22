@@ -6,7 +6,8 @@ pip install scapy
 
 
 what works :
-Scan_ip
-upnpscans_done.py
-
-SNMP not done need to figure out snmp vm 
+arp-ip-mac-vendor.py done
+upnpscans_done.py done
+snmp-com-tester.py done 
+snmpwalker.py done
+mDNS(Zeroconf) semi done 
