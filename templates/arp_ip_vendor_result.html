@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>arp/ip/vendor</title>
+</head>
+
+<body>
+    <h1>Arp Results</h1>
+    {% if clients %}
+    <h2>Available devices in the network:</h2>
+    <table>
+        <tr>
+            <th>IP</th>
+            <th>MAC</th>
+            <th>Vendor</th>
+        </tr>
+        {% for client in clients %}
+        <tr>
+            <td>{{ client.ip }}</td>
+            <td>{{ client.mac }}</td>
+            <td>{{ client.vendor }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>No result to display</p>
+    {% endif %}
+    <a href="/">Back to Home</a>
+    <a href="/arp_ip_vendor">Back to Arp input page </a>
+</body>
+
+</html>

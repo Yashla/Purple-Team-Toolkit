@@ -10,4 +10,11 @@ arp-ip-mac-vendor.py done
 upnpscans_done.py done
 snmp-com-tester.py done 
 snmpwalker.py done
-mDNS(Zeroconf) semi done 
+mDNS(Zeroconf)  done 
+
+
+To do for website :
+arp done
+snmp done 
+snmp com tester 
+mDNS

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>arp/ip/vendor</title>
+</head>
+<body>
+    <form method="post" action="/arp_ip_vendor/result" >
+        <p>Type a single ip in the network to get specific information on a host or a network address to find all possible nodes. 
+            <br>
+            192.168.0.172
+            <br>
+            or 
+            <br>
+            192.168.0.0/24
+            <br>
+        </p>
+        <label for="ip_addr">IP Address: </label>
+        <input type="text" name="ip_addr" id="ip_addr">
+        <br>
+        <button type="submit" value="Scan">Run Script</button>
+    </form>
+</body>
+</html>
