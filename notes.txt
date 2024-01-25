@@ -16,5 +16,6 @@ mDNS(Zeroconf)  done
 To do for website :
 arp done
 snmp done 
-snmp com tester 
+snmp com tester done 
+upnpscans done
 mDNS
