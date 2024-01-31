@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Discovered Services</title>
+</head>
+<body>
+    <h1>Discovered Services</h1>
+    {% if services %}
+        <ul>
+            {% for service in services %}
+                <li>
+                    <strong>{{ service.name }}</strong><br>
+                    Type: {{ service.type }}<br>
+                    Address: {{ service.address }}:{{ service.port }}<br>
+                    Properties: {{ service.properties }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No services discovered.</p>
+    {% endif %}
+    <a href="/mdns_discovery">Back to Discovery</a>
+</body>
+</html>

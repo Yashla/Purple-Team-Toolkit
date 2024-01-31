@@ -3,6 +3,7 @@ from snmpwalker import snmp_walk # importing functions form main script
 from snmpcomtester import test_snmp_community_strings
 from arp_ip_mac_vendor import arp
 from upnp_discovery import discover_upnp_devices
+from discover_mdnss import discover_services
 
 app = Flask(__name__) #starting up flask 
 ## home page ---------------------------------------------------------------------------------------------------------
@@ -60,6 +61,22 @@ def discover():
     devices = discover_upnp_devices()
     return render_template('upnp_devices.html', devices=devices)
 
+#-------------------------------------------------------------------------------------------------------------------------
+
+@app.route('/mdns_discovery', methods=['GET'])
+def mDNS_page():
+    return render_template('mdns_discovery.html')
+
+    
+
+@app.route('/mdns_discovery', methods=['GET', 'POST'])
+def mdns_discovery():
+    if request.method == 'POST':
+        service_types_input = request.form['service_types']
+        service_types = [st.strip() for st in service_types_input.split(',')]
+        discovered_services = discover_services(service_types, duration=10)
+        return render_template('mdns_results.html', services=discovered_services)
+    return render_template('mdns_discovery.html')
 
 
 
