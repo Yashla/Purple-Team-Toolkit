@@ -5,17 +5,23 @@ pip install scapy
 
 
 
-what works :
-arp-ip-mac-vendor.py done
-upnpscans_done.py done
-snmp-com-tester.py done 
-snmpwalker.py done
-mDNS(Zeroconf)  done 
+what i have done so far :
+change of plan
+allow for WRI on the windows devices 
+allow ssh on the linux devices
+allows for ssh on the macs
+
+might us anisble instead of ssh.
+
+andriod ??
+iphones ??
+
+when running these scripts to get the information about them i might need to store all the information into a text file
+and format the text file in a way that can be passed to the api and qeurry straight away 
 
 
-To do for website :
-arp done
-snmp done 
-snmp com tester done 
-upnpscans done
-mDNS
+finding different types of devices:
+
+windows : from port WRI open port  winrm = 5985 for http and 5986 for https
+linux : ssh port 
+Mac os : _raop._tcp.local. mdns

@@ -22,15 +22,7 @@ listener = MyListener()
 
 # List of service types you want to discover
 service_types = [
-    "_http._tcp.local.",
-    "_ftp._tcp.local.",
-    "_ssh._tcp.local.",
-    "_airplay._tcp.local.",
-    "_bonjour._tcp.local.",
-    "_googlecast._tcp.local.",
-    "_dlna._tcp.local.",
-    "_raop._tcp.local.",
-    
+    "_apple-mobdev2._tcp.local.",   
     # Add more services as needed
 ]
 
