@@ -2,21 +2,21 @@ import paramiko
 
 # SSH connection parameters
 hostname = '192.168.0.176'  # Replace with the actual hostname or IP of 'test'
-username = 'kali'   # Replace with your username on 'test'
-key_file = '/home/yash/.ssh/id_rsa'  # Path to your private key, if using key authentication
+username = 'astonmgmt'   # Replace with your username on 'test'
+password = 'astonmgmt'  # Path to your private key, if using key authentication
 
 # Commands to gather information
 commands = [
     'uname -a',              # Get OS information
-    'hostname -I',           # Get IP address(es)
-    'cat /etc/os-release',   # Get detailed OS release information
+    'whoami',           # Get IP address(es)
+    'pwd',   # Get detailed OS release information
 ]
 
 try:
     # Create SSH client
     client = paramiko.SSHClient()
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-    client.connect(hostname, username=username, key_filename=key_file)
+    client.connect(hostname, username=username, password=password)
 
     for cmd in commands:
         stdin, stdout, stderr = client.exec_command(cmd)

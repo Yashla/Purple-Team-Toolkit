@@ -25,3 +25,6 @@ finding different types of devices:
 windows : from port WRI open port  winrm = 5985 for http and 5986 for https
 linux : ssh port 
 Mac os : _raop._tcp.local. mdns
+
+
+need to write as functions for the website. main

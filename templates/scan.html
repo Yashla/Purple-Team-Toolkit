@@ -1,0 +1,63 @@
+<!-- templates/scan.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function toggleSSHForm(ip) {
+            var form = document.getElementById('ssh-form-' + ip);
+            form.style.display = form.style.display === 'none' ? 'block' : 'none';
+        }
+        </script>
+        
+    <meta charset="UTF-8">
+    <title>Scan Network</title>
+</head>
+<body>
+    {% if not scanned %}
+    <h1>Enter Network to Scan (Make sure device has SSH or WRI enabled this only check for port 22 or 5895)</h1>
+    <form action="" method="post">
+        <input type="text" name="subnet" placeholder="192.168.0.0/24">
+        <button type="submit">Scan</button>
+    </form>
+    {% else %}
+    <h1>Scan Results for {{ subnet }}</h1>
+    <h2>Windows Devices</h2>
+    <ul>
+        {% for ip in windows %}
+        <li>{{ ip }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Linux Devices</h2>
+    <ul>
+        {% for ip in linux %}
+        <li><a href="javascript:void(0);" onclick="toggleSSHForm('{{ ip }}')">{{ ip }}</a></li>
+        <div id="ssh-form-{{ ip }}" style="display:none;">
+            <form action="/ssh" method="post">
+                <input type="hidden" name="ip" value="{{ ip }}">
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+                <button type="submit">SSH Connect</button>
+            </form>
+        </div>
+        {% endfor %}
+    </ul>
+    
+    <h2>MacBook Devices</h2>
+    <ul>
+        {% for ip in macbooks %}
+        <li>{{ ip }}</li>
+        {% endfor %}
+    </ul>
+        {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+        <div>{{ message }}</div>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+    <a href="{{ url_for('index') }}"><button>Back to Home</button></a>
+    {% endif %}
+
+    
+</body>
+</html>

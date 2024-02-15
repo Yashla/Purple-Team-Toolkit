@@ -2,13 +2,14 @@ import paramiko
 
 # SSH connection parameters
 hostname = '192.168.0.132'   # Replace with the actual hostname or IP of the Mac
-username = 'yash'    # Replace with your username on the Mac
-password = 'Divali50?'    # Replace with your password on the Mac
+username = 'astonmgmt'    # Replace with your username on the Mac
+password = 'astonmgmt'    # Replace with your password on the Mac
 
 # Commands to gather information on macOS
 commands = [
     'uname -a',                   # Get basic OS information     # Get IP address(es)
-    'sw_vers',                    # Get macOS version information
+    'sw_vers',   # Get macOS version information
+    'whoami',   
 ]
 
 try:
