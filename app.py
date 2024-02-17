@@ -4,13 +4,67 @@ from discover_mdnss import discover_services
 from flask import Flask, render_template, request, redirect, url_for, flash
 from network_scanner import NetworkScanner
 from network_scanner import ssh_into_device
+from flask_sqlalchemy import SQLAlchemy
+
+
 
 app = Flask(__name__) #starting up flask 
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://phpmyadmin:2002@localhost/scan'
+db = SQLAlchemy(app)
+
 app.secret_key = 'your_secret_key'
+
+
+
 ## home page ---------------------------------------------------------------------------------------------------------
 @app.route('/', methods=['GET'])
 def index():
     return render_template('index.html')
+
+    
+class devices(db.Model):
+    __tablename__ = 'devices'
+
+    id = db.Column(db.Integer, primary_key=True)
+    ip_address = db.Column(db.String(15), nullable=False)
+    device_type = db.Column(db.String(255), nullable=False)
+    username = db.Column(db.String(255), nullable=False)
+    password = db.Column(db.String(255), nullable=False)
+
+    def __repr__(self):
+        return f'<Device {self.ip_address}>'
+    
+
+
+#------------------------------------------------------------------------------------------------------------------------
+@app.route('/add_device', methods=['POST'])
+def add_device():
+    # Extract device details from the form submission
+    ips = request.form.getlist('ip[]')
+    for ip in ips:
+        device_type = request.form.get('type[{}]'.format(ip))
+        username = request.form.get('username[{}]'.format(ip))
+        password = request.form.get('password[{}]'.format(ip))
+    
+        # Create a new Device instance
+        new_device = devices(ip_address=ip, device_type=device_type, username=username, password=password)
+        
+        # Add to the session and commit to the database
+        db.session.add(new_device)
+    db.session.commit()
+    
+    # Provide feedback to the user or redirect
+    flash('Device details successfully sent to the database!')
+    return redirect(url_for('index'))
+
+
+
+
+
+
+
+
 
 #------------------------------------------------------------------------------------------------------------------------
 #scan
@@ -58,6 +112,7 @@ def mdns_discovery():
         discovered_services = discover_services(service_types, duration=10)
         return render_template('mdns_results.html', services=discovered_services)
     return render_template('mdns_discovery.html')
+
 
 
 
