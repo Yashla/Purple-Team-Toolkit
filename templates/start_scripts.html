@@ -1,0 +1,17 @@
+<!-- start_scripts.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Information Gathering Results</title>
+</head>
+<body>
+    <h1>Information Gathering Results</h1>
+    <ul>
+        {% for device in devices %}
+        <li>{{ device.ip_address }} - {{ device.device_type }} - OS Version: {{ device.os_info }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>

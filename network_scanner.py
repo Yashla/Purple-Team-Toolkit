@@ -2,9 +2,11 @@ import socket
 import ipaddress
 from concurrent.futures import ThreadPoolExecutor
 from zeroconf import Zeroconf, ServiceBrowser, ServiceListener
-import paramiko
 import time
-
+import  winrm
+from winrm.exceptions import WinRMTransportError
+import paramiko
+from paramiko.ssh_exception import AuthenticationException, SSHException
 
 # Define a class to hold the discovered IP addresses
 class NetworkScanner:
@@ -76,6 +78,78 @@ def ssh_into_device(ip, username, password):
         return True, "Connection successful"
     except Exception as e:
         return False, str(e)
+    
+    
+    
+def get_windows_os_info(device):
+    windows_host = f'http://{device.ip_address}:5985/wsman'
+    try:
+        session = winrm.Session(windows_host, auth=(device.username, device.password), transport='basic')
+        ps_script = "Get-WmiObject -Class Win32_OperatingSystem | Select-Object Caption, Version"
+        result = session.run_ps(ps_script)
+        if result.status_code == 0:
+            return result.std_out.decode().strip()  # Successfully got OS info
+        else:
+            # Handling non-zero status code as a command execution error
+            return "Can't get information as command execution failed. Check the command and try again."
+    except WinRMTransportError as e:
+        # Check if the error message contains indications of an unauthorized error
+        if 'unauthorized' in str(e).lower():
+            return "Can't get information as device can't be logged into. Check login details."
+        else:
+            return "Connection failed due to a transport error. Check device availability and network."
+    except Exception as e:
+        # Handling any other unexpected errors
+        return f"An unexpected error occurred: {str(e)}"
+
+    
+    
+
+def get_linux_os_info(device):
+    ssh_client = paramiko.SSHClient()
+    ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+    try:
+        ssh_client.connect(hostname=device.ip_address, username=device.username, password=device.password)
+        stdin, stdout, stderr = ssh_client.exec_command("uname -a")
+        os_info = stdout.read().decode().strip()
+        error = stderr.read().decode().strip()
+
+        if error:
+            return "Can't get information as command execution failed. Check the command and try again."
+        return os_info  # Successfully got OS info
+    except AuthenticationException:
+        return "Can't get information as device can't be logged into. Check login details."
+    except SSHException as e:
+        return "Connection failed due to an SSH error. Check device availability and network."
+    except Exception as e:
+        return f"An unexpected error occurred: {str(e)}"
+    finally:
+        ssh_client.close()
+
+def get_mac_os_info(device):
+    ssh_client = paramiko.SSHClient()
+    ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+    try:
+        ssh_client.connect(hostname=device.ip_address, username=device.username, password=device.password)
+        stdin, stdout, stderr = ssh_client.exec_command("uname -a && sw_vers")
+        os_info = stdout.read().decode().strip()
+        error = stderr.read().decode().strip()
+
+        if error:
+            # Instead of raising an exception, return a message indicating the command failed
+            return "Can't get information as command execution failed. Check the command and try again."
+        return os_info  # Successfully got OS info
+    except AuthenticationException:
+        return "Can't get information as device can't be logged into. Check login details."
+    except SSHException as e:
+        return "Connection failed due to an SSH error. Check device availability and network."
+    except Exception as e:
+        # Handling any other unexpected errors
+        return f"An unexpected error occurred: {str(e)}"
+    finally:
+        ssh_client.close()
+
+
 
 
 # Example usage within Flask

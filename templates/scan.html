@@ -1,9 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Scan Network</title>
+    <script>
+        function autofillWindowsCredentials() {
+            var username = document.getElementById('globalWindowsUsername').value;
+            var password = document.getElementById('globalWindowsPassword').value;
+
+            document.querySelectorAll('input[type="hidden"][value="Windows"]').forEach(function (hiddenInput) {
+                var parentDiv = hiddenInput.closest('div');
+                var usernameInput = parentDiv.querySelector('input[name^="username"]');
+                var passwordInput = parentDiv.querySelector('input[name^="password"]');
+
+                usernameInput.value = username;
+                passwordInput.value = password;
+            });
+        }
+
+        function autofillLinuxCredentials() {
+            var username = document.getElementById('globalLinuxUsername').value;
+            var password = document.getElementById('globalLinuxPassword').value;
+
+            document.querySelectorAll('input[type="hidden"][value="Linux"]').forEach(function (hiddenInput) {
+                var parentDiv = hiddenInput.closest('div');
+                var usernameInput = parentDiv.querySelector('input[name^="username"]');
+                var passwordInput = parentDiv.querySelector('input[name^="password"]');
+
+                usernameInput.value = username;
+                passwordInput.value = password;
+            });
+        }
+
+        // New function to autofill MacBook credentials
+        function autofillMacCredentials() {
+            var username = document.getElementById('globalMacUsername').value;
+            var password = document.getElementById('globalMacPassword').value;
+
+            document.querySelectorAll('input[type="hidden"][value="Mac"]').forEach(function (hiddenInput) {
+                var parentDiv = hiddenInput.closest('div');
+                var usernameInput = parentDiv.querySelector('input[name^="username"]');
+                var passwordInput = parentDiv.querySelector('input[name^="password"]');
+
+                usernameInput.value = username;
+                passwordInput.value = password;
+            });
+        }
+
+        function clearAllFields() {
+            // Target all text and password inputs within the form
+            document.querySelectorAll('form input[type="text"], form input[type="password"]').forEach(function (inputField) {
+                inputField.value = ''; // Clear each field
+            });
+            // Clear global autofill fields for Windows, Linux, and MacBook
+            document.getElementById('globalWindowsUsername').value = '';
+            document.getElementById('globalWindowsPassword').value = '';
+            document.getElementById('globalLinuxUsername').value = '';
+            document.getElementById('globalLinuxPassword').value = '';
+            document.getElementById('globalMacUsername').value = '';
+            document.getElementById('globalMacPassword').value = '';
+        }
+    </script>
+    </script>
 </head>
+
 <body>
     {% if not scanned %}
     <h1>Enter Network to Scan</h1>
@@ -13,6 +74,23 @@
     </form>
     {% else %}
     <h1>Scan Results for {{ subnet }}</h1>
+    <!-- Global username/password inputs and autofill button -->
+    <div>
+        <input type="text" id="globalWindowsUsername" placeholder="Global WRI Username">
+        <input type="password" id="globalWindowsPassword" placeholder="Global WRI Password">
+        <button onclick="autofillWindowsCredentials()">Autofill Windows Credentials</button>
+    </div>
+    <div>
+        <input type="text" id="globalLinuxUsername" placeholder="Global Linux Username">
+        <input type="password" id="globalLinuxPassword" placeholder="Global Linux Password">
+        <button onclick="autofillLinuxCredentials()">Autofill Linux Credentials</button>
+    </div>
+    <div>
+        <input type="text" id="globalMacUsername" placeholder="Global MacBook Username">
+        <input type="password" id="globalMacPassword" placeholder="Global MacBook Password">
+        <button onclick="autofillMacCredentials()">Autofill MacBook Credentials</button>
+    </div>
+
     <form action="/add_device" method="post">
         <h2>Devices Found</h2>
         {% for ip in windows %}
@@ -41,10 +119,18 @@
             <input type="text" name="username[{{ ip }}]" placeholder="SSH Username">
             <input type="password" name="password[{{ ip }}]" placeholder="SSH Password">
         </div>
+        <br>
         {% endfor %}
+        <br>
         <button type="submit">Send Log in Details to Database</button>
     </form>
+    <br>
+    <div>
+        <button type="button" onclick="clearAllFields()">Clear All Fields</button>
+    </div>
+    <br>
     <a href="{{ url_for('index') }}"><button>Back to Home</button></a>
     {% endif %}
 </body>
+
 </html>

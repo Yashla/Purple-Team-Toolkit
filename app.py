@@ -1,4 +1,7 @@
 import threading
+from network_scanner import get_windows_os_info
+from network_scanner import get_linux_os_info
+from network_scanner import get_mac_os_info
 from upnp_discovery import discover_upnp_devices
 from discover_mdnss import discover_services
 from flask import Flask, render_template, request, redirect, url_for, flash
@@ -23,7 +26,7 @@ def index():
     return render_template('index.html')
 
     
-class devices(db.Model):
+class Device(db.Model):
     __tablename__ = 'devices'
 
     id = db.Column(db.Integer, primary_key=True)
@@ -48,7 +51,7 @@ def add_device():
         password = request.form.get('password[{}]'.format(ip))
     
         # Create a new Device instance
-        new_device = devices(ip_address=ip, device_type=device_type, username=username, password=password)
+        new_device = Device(ip_address=ip, device_type=device_type, username=username, password=password)
         
         # Add to the session and commit to the database
         db.session.add(new_device)
@@ -58,6 +61,28 @@ def add_device():
     flash('Device details successfully sent to the database!')
     return redirect(url_for('index'))
 
+#--------------------------------------------------------------------------------------------------------------------------
+
+@app.route('/start_scripts')
+def start_scripts():
+    all_devices = Device.query.all()  # Fetch all devices from the database
+    for device in all_devices:
+        if device.device_type == 'Windows':
+            device.os_info = get_windows_os_info(device)
+            # Call your Windows script here and update device information
+            pass
+        elif device.device_type == 'Linux':
+            device.os_info = get_linux_os_info(device)
+            # Call your Linux script here and update device information
+            pass
+        elif device.device_type == 'Mac':
+            device.os_info = get_mac_os_info(device)
+            # Call your MacBook script here and update device information
+            pass
+        # Update the database with any new information obtained
+        db.session.commit()
+    
+    return render_template('start_scripts.html', devices=all_devices)
 
 
 
@@ -79,22 +104,6 @@ def scan_network():
         return render_template('scan.html', subnet=subnet, windows=scanner.windows_array, linux=scanner.linux_array, macbooks=scanner.macbook_array, scanned=True)
     return render_template('scan.html', scanned=False)
 
-@app.route('/ssh', methods=['POST'])
-def handle_ssh():
-    ip = request.form['ip']
-    username = request.form['username']
-    password = request.form['password']
-    success, message = ssh_into_device(ip, username, password)
-    if success:
-        flash("SSH connection to {} successful.".format(ip))
-    else:
-        flash("SSH connection failed: {}".format(message))
-    return redirect(url_for('scan_network'))
-
-@app.route('/discover_upnp', methods=['GET'])
-def discover():
-    devices = discover_upnp_devices()
-    return render_template('upnp_devices.html', devices=devices)
 
 #-------------------------------------------------------------------------------------------------------------------------
 

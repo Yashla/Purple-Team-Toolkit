@@ -25,6 +25,30 @@ finding different types of devices:
 windows : from port WRI open port  winrm = 5985 for http and 5986 for https
 linux : ssh port 
 Mac os : _raop._tcp.local. mdns
+finding all printers ??
 
 
 need to write as functions for the website. main
+
+
+
+
+errors i have faced :
+if log in fails program crashes 
+making sure everyone has the correct logins 
+running scans faster, like parralel execution.
+
+
+i need to think of me storing all the script information into seperate database table called device_info 
+
+device info will include 
+OS verison 
+open and closed ports 
+all the applications that are installed AND running on each devices.(and somehow getting there versions number to then check if the software can be exploited.)
+up time
+network interfaces and info 
+storage space 
+
+maybe 2 types of scans so normal and one in detail.
+
+checking if there any new devices on the network using ping or arp ???
