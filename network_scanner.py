@@ -5,8 +5,15 @@ from zeroconf import Zeroconf, ServiceBrowser, ServiceListener
 import time
 import  winrm
 from winrm.exceptions import WinRMTransportError
+from flask_sqlalchemy import SQLAlchemy
 import paramiko
 from paramiko.ssh_exception import AuthenticationException, SSHException
+from models import DeviceInfo
+from extensions import db
+
+
+
+
 
 # Define a class to hold the discovered IP addresses
 class NetworkScanner:
@@ -66,88 +73,105 @@ class NetworkScanner:
                 self.linux_array.remove(mac_ip)
 
 
-def ssh_into_device(ip, username, password):
-    try:
+    
+        
+    def get_windows_os_info(device):
+        windows_host = f'http://{device.ip_address}:5985/wsman'
+        try:
+            session = winrm.Session(windows_host, auth=(device.username, device.password), transport='basic')
+            # Updated PowerShell script for cleaner output
+            ps_script = "Get-CimInstance Win32_OperatingSystem | ForEach-Object { \"$($_.Caption) $($_.Version)\" }"
+            result = session.run_ps(ps_script)
+            if result.status_code == 0:
+                os_info = result.std_out.decode().strip()  # Successfully got OS info
+                
+                # Find the corresponding DeviceInfo entry based on device_id
+                device_info = DeviceInfo.query.filter_by(device_id=device.id).first()
+                if device_info:
+                    # Update the os_version with the retrieved OS information
+                    device_info.os_version = os_info
+                    db.session.commit()
+                    return os_info
+                else:
+                    return "DeviceInfo entry not found for the given device."
+            else:
+                return "Can't get information as command execution failed. Check the command and try again."
+        except winrm.exceptions.WinRMTransportError as e:
+            if 'unauthorized' in str(e).lower():
+                return "Can't get information as device can't be logged into. Check login details."
+            else:
+                return "Connection failed due to a transport error. Check device availability and network."
+        except Exception as e:
+            return f"An unexpected error occurred: {str(e)}"
+
+    def get_linux_os_info(device):
         ssh_client = paramiko.SSHClient()
         ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh_client.connect(
-            hostname=ip, username=username, password=password, timeout=10
-        )
-        # Here you can execute commands or perform operations
-        ssh_client.close()
-        return True, "Connection successful"
-    except Exception as e:
-        return False, str(e)
-    
-    
-    
-def get_windows_os_info(device):
-    windows_host = f'http://{device.ip_address}:5985/wsman'
-    try:
-        session = winrm.Session(windows_host, auth=(device.username, device.password), transport='basic')
-        ps_script = "Get-WmiObject -Class Win32_OperatingSystem | Select-Object Caption, Version"
-        result = session.run_ps(ps_script)
-        if result.status_code == 0:
-            return result.std_out.decode().strip()  # Successfully got OS info
-        else:
-            # Handling non-zero status code as a command execution error
-            return "Can't get information as command execution failed. Check the command and try again."
-    except WinRMTransportError as e:
-        # Check if the error message contains indications of an unauthorized error
-        if 'unauthorized' in str(e).lower():
+        try:
+            ssh_client.connect(hostname=device.ip_address, username=device.username, password=device.password)
+            command = "echo $(awk -F= '/^PRETTY_NAME/{print $2}' /etc/os-release | tr -d '\"') $(uname -r)"
+            stdin, stdout, stderr = ssh_client.exec_command(command)
+            os_info = stdout.read().decode().strip()
+            error = stderr.read().decode().strip()
+
+            if error:
+                return "Can't get information as command execution failed. Check the command and try again."
+            
+            # Assuming 'device.id' can be directly used to query the DeviceInfo table
+            device_info = DeviceInfo.query.filter_by(device_id=device.id).first()
+            if device_info:
+                # Update the os_version with the retrieved OS information
+                device_info.os_version = os_info
+                db.session.commit()
+                return os_info
+            else:
+                return "DeviceInfo entry not found for the given device."
+            
+        except AuthenticationException:
             return "Can't get information as device can't be logged into. Check login details."
-        else:
-            return "Connection failed due to a transport error. Check device availability and network."
-    except Exception as e:
-        # Handling any other unexpected errors
-        return f"An unexpected error occurred: {str(e)}"
-
+        except SSHException as e:
+            return f"Connection failed due to an SSH error. Check device availability and network. Error: {str(e)}"
+        except Exception as e:
+            return f"An unexpected error occurred: {str(e)}"
+        finally:
+            ssh_client.close()
     
     
 
-def get_linux_os_info(device):
-    ssh_client = paramiko.SSHClient()
-    ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-    try:
-        ssh_client.connect(hostname=device.ip_address, username=device.username, password=device.password)
-        stdin, stdout, stderr = ssh_client.exec_command("uname -a")
-        os_info = stdout.read().decode().strip()
-        error = stderr.read().decode().strip()
 
-        if error:
-            return "Can't get information as command execution failed. Check the command and try again."
-        return os_info  # Successfully got OS info
-    except AuthenticationException:
-        return "Can't get information as device can't be logged into. Check login details."
-    except SSHException as e:
-        return "Connection failed due to an SSH error. Check device availability and network."
-    except Exception as e:
-        return f"An unexpected error occurred: {str(e)}"
-    finally:
-        ssh_client.close()
 
-def get_mac_os_info(device):
-    ssh_client = paramiko.SSHClient()
-    ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-    try:
-        ssh_client.connect(hostname=device.ip_address, username=device.username, password=device.password)
-        stdin, stdout, stderr = ssh_client.exec_command("uname -a && sw_vers")
-        os_info = stdout.read().decode().strip()
-        error = stderr.read().decode().strip()
 
-        if error:
-            # Instead of raising an exception, return a message indicating the command failed
-            return "Can't get information as command execution failed. Check the command and try again."
-        return os_info  # Successfully got OS info
-    except AuthenticationException:
-        return "Can't get information as device can't be logged into. Check login details."
-    except SSHException as e:
-        return "Connection failed due to an SSH error. Check device availability and network."
-    except Exception as e:
-        # Handling any other unexpected errors
-        return f"An unexpected error occurred: {str(e)}"
-    finally:
-        ssh_client.close()
+    def get_mac_os_info(device):
+        ssh_client = paramiko.SSHClient()
+        ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        try:
+            ssh_client.connect(hostname=device.ip_address, username=device.username, password=device.password)
+            command = "echo $(sw_vers -productName) $(sw_vers -productVersion)"
+            stdin, stdout, stderr = ssh_client.exec_command(command)
+            os_info = stdout.read().decode().strip()
+            error = stderr.read().decode().strip()
+
+            if error:
+                return "Can't get information as command execution failed. Check the command and try again."
+            
+            # Assuming 'device.id' can be directly used to query the DeviceInfo table
+            device_info = DeviceInfo.query.filter_by(device_id=device.id).first()
+            if device_info:
+                # Update the os_version with the retrieved OS information
+                device_info.os_version = os_info
+                db.session.commit()
+                return os_info
+            else:
+                return "DeviceInfo entry not found for the given device."
+
+        except AuthenticationException:
+            return "Can't get information as device can't be logged into. Check login details."
+        except SSHException as e:
+            return f"Connection failed due to an SSH error. Check device availability and network. Error: {str(e)}"
+        except Exception as e:
+            return f"An unexpected error occurred: {str(e)}"
+        finally:
+            ssh_client.close()
 
 
 

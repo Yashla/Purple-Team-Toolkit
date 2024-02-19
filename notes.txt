@@ -52,3 +52,5 @@ storage space
 maybe 2 types of scans so normal and one in detail.
 
 checking if there any new devices on the network using ping or arp ???
+
+i need to check that the ssh details actually correct
