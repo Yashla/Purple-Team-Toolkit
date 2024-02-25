@@ -54,3 +54,50 @@ maybe 2 types of scans so normal and one in detail.
 checking if there any new devices on the network using ping or arp ???
 
 i need to check that the ssh details actually correct
+
+
+scanning 
+    getting information to see if there a vulnerbility 
+
+api request 
+    getting data doing an api request to see if anything pops up any CVE will need a well known vulnerbaile iso for each os windows linux and mac.
+
+storing it back in a speical database 
+    report it back to the user 
+        tell them what to do and how to do it.
+
+
+getting the current os version 
+    then comparing it to the latest version 
+        finding all the CVE in the CVE from the difference so latest - current OS 
+            and then becuase your os is older it has all the threats of these CVE all becuase your not upto date with the secuirty updates
+
+
+
+
+WINDOWS 
+Vendor = Microsoft (constant)
+Product = two parts (windows_10_21h2) 
+
+windows_xx = Write-Output ("Windows_" + (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion').CurrentMajorVersionNumber)
+
+feature update version name = (Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion").DisplayVersion
+
+both combined = Write-Output ("Windows_" + (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion').CurrentMajorVersionNumber + "_" + (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion').DisplayVersion)
+
+Version = Write-Output ((Get-WmiObject Win32_OperatingSystem).Version + "." + (Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion").UBR)
+
+Ubuntu (linux)
+
+Vendor = canonical
+Product = if grep -q '^NAME="Ubuntu"' /etc/os-release; then
+  echo "ubuntu_linux"
+fi
+
+Version = cat /etc/os-release | grep '^VERSION_ID='
+
+
+Mac
+Vendor = apple
+Product = sw_vers | awk '/ProductName/{print $2}'
+Version = sw_vers | awk '/ProductVersion/{print $2}'

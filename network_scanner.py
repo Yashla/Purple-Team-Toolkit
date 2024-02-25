@@ -76,102 +76,81 @@ class NetworkScanner:
     
         
     def get_windows_os_info(device):
-        windows_host = f'http://{device.ip_address}:5985/wsman'
         try:
+            windows_host = f'http://{device.ip_address}:5985/wsman'
             session = winrm.Session(windows_host, auth=(device.username, device.password), transport='basic')
-            # Updated PowerShell script for cleaner output
-            ps_script = "Get-CimInstance Win32_OperatingSystem | ForEach-Object { \"$($_.Caption) $($_.Version)\" }"
-            result = session.run_ps(ps_script)
-            if result.status_code == 0:
-                os_info = result.std_out.decode().strip()  # Successfully got OS info
-                
-                # Find the corresponding DeviceInfo entry based on device_id
-                device_info = DeviceInfo.query.filter_by(device_id=device.id).first()
-                if device_info:
-                    # Update the os_version with the retrieved OS information
-                    device_info.os_version = os_info
-                    db.session.commit()
-                    return os_info
-                else:
-                    return "DeviceInfo entry not found for the given device."
-            else:
-                return "Can't get information as command execution failed. Check the command and try again."
-        except winrm.exceptions.WinRMTransportError as e:
-            if 'unauthorized' in str(e).lower():
-                return "Can't get information as device can't be logged into. Check login details."
-            else:
-                return "Connection failed due to a transport error. Check device availability and network."
+
+            # PowerShell script to get the Product with specific format
+            ps_script_product = """
+            $product = "Windows_" + ((Get-ItemProperty 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion').CurrentMajorVersionNumber) + "_" + ((Get-ItemProperty 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion').DisplayVersion)
+            Write-Output $product
+            """
+            result_product = session.run_ps(ps_script_product)
+            Product = result_product.std_out.decode().strip().lower() if result_product.status_code == 0 else "Error fetching Product"
+            
+            # PowerShell script to get the Version
+            ps_script_version = """
+            $version = ((Get-WmiObject Win32_OperatingSystem).Version + "." + (Get-ItemProperty "HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion").UBR)
+            Write-Output $version
+            """
+            result_version = session.run_ps(ps_script_version)
+            Version = result_version.std_out.decode().strip().lower() if result_version.status_code == 0 else "Error fetching Version"
+            
+            Vendor = "microsoft"
+
+            return Vendor, Product, Version
         except Exception as e:
-            return f"An unexpected error occurred: {str(e)}"
+            return "Error", f"An unexpected error occurred: {str(e)}", ""
+
+
 
     def get_linux_os_info(device):
-        ssh_client = paramiko.SSHClient()
-        ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         try:
+            ssh_client = paramiko.SSHClient()
+            ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
             ssh_client.connect(hostname=device.ip_address, username=device.username, password=device.password)
-            command = "echo $(awk -F= '/^PRETTY_NAME/{print $2}' /etc/os-release | tr -d '\"') $(uname -r)"
-            stdin, stdout, stderr = ssh_client.exec_command(command)
-            os_info = stdout.read().decode().strip()
-            error = stderr.read().decode().strip()
-
-            if error:
-                return "Can't get information as command execution failed. Check the command and try again."
             
-            # Assuming 'device.id' can be directly used to query the DeviceInfo table
-            device_info = DeviceInfo.query.filter_by(device_id=device.id).first()
-            if device_info:
-                # Update the os_version with the retrieved OS information
-                device_info.os_version = os_info
-                db.session.commit()
-                return os_info
-            else:
-                return "DeviceInfo entry not found for the given device."
+            # Command to check if the OS is Ubuntu
+            check_ubuntu_cmd = "if grep -q '^NAME=\"Ubuntu\"' /etc/os-release; then echo 'ubuntu_linux'; fi"
+            stdin, stdout, stderr = ssh_client.exec_command(check_ubuntu_cmd)
+            Product = stdout.read().decode().strip().lower()
             
-        except AuthenticationException:
-            return "Can't get information as device can't be logged into. Check login details."
-        except SSHException as e:
-            return f"Connection failed due to an SSH error. Check device availability and network. Error: {str(e)}"
-        except Exception as e:
-            return f"An unexpected error occurred: {str(e)}"
-        finally:
+            # Command to get the VERSION_ID
+            get_version_cmd = "cat /etc/os-release | grep '^VERSION_ID=' | cut -d'=' -f2 | tr -d '\"'"
+            stdin, stdout, stderr = ssh_client.exec_command(get_version_cmd)
+            Version = stdout.read().decode().strip().lower() or "Error fetching Version"
+            
+            Vendor = "canonical"
+            
             ssh_client.close()
-    
-    
-
-
+            return Vendor, Product, Version
+        except Exception as e:
+            return "Error", f"An unexpected error occurred: {str(e)}", ""
 
 
     def get_mac_os_info(device):
-        ssh_client = paramiko.SSHClient()
-        ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         try:
+            ssh_client = paramiko.SSHClient()
+            ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
             ssh_client.connect(hostname=device.ip_address, username=device.username, password=device.password)
-            command = "echo $(sw_vers -productName) $(sw_vers -productVersion)"
-            stdin, stdout, stderr = ssh_client.exec_command(command)
-            os_info = stdout.read().decode().strip()
-            error = stderr.read().decode().strip()
-
-            if error:
-                return "Can't get information as command execution failed. Check the command and try again."
             
-            # Assuming 'device.id' can be directly used to query the DeviceInfo table
-            device_info = DeviceInfo.query.filter_by(device_id=device.id).first()
-            if device_info:
-                # Update the os_version with the retrieved OS information
-                device_info.os_version = os_info
-                db.session.commit()
-                return os_info
-            else:
-                return "DeviceInfo entry not found for the given device."
-
-        except AuthenticationException:
-            return "Can't get information as device can't be logged into. Check login details."
-        except SSHException as e:
-            return f"Connection failed due to an SSH error. Check device availability and network. Error: {str(e)}"
-        except Exception as e:
-            return f"An unexpected error occurred: {str(e)}"
-        finally:
+            # Separate commands for ProductName and ProductVersion
+            product_name_command = "sw_vers | awk '/ProductName/{print $2}'"
+            stdin, stdout, stderr = ssh_client.exec_command(product_name_command)
+            Product = stdout.read().decode().strip().lower() if not stderr.read().decode().strip() else "Error fetching ProductName"
+            
+            product_version_command = "sw_vers | awk '/ProductVersion/{print $2}'"
+            stdin, stdout, stderr = ssh_client.exec_command(product_version_command)
+            Version = stdout.read().decode().strip().lower() if not stderr.read().decode().strip() else "Error fetching ProductVersion"
+            
+            Vendor = "apple"
+            
             ssh_client.close()
+            return Vendor, Product, Version
+        except Exception as e:
+            return "Error", f"An unexpected error occurred: {str(e)}", ""
+
+
 
 
 

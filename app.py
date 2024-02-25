@@ -41,33 +41,50 @@ def reset_db():
 
 
 #------------------------------------------------------------------------------------------------------------------------
+
 @app.route('/add_device', methods=['POST'])
 def add_device():
-    # Extract device details from the form submission
     ips = request.form.getlist('ip[]')
     for ip in ips:
         device_type = request.form.get('type[{}]'.format(ip))
         username = request.form.get('username[{}]'.format(ip))
         password = request.form.get('password[{}]'.format(ip))
-    
-        # Create a new Device instance
+
+        # Instantiate a Device object
         new_device = Device(ip_address=ip, device_type=device_type, username=username, password=password)
         db.session.add(new_device)
-        db.session.flush()  # Flush to ensure new_device.id is populated
+        db.session.flush()  # Ensures new_device.id is available immediately for related operations
+
+        # Fetch OS information based on device type
+        if device_type.lower() == 'linux':
+            vendor, product, version = NetworkScanner.get_linux_os_info(new_device)
+        elif device_type.lower() == 'windows':
+            vendor, product, version = NetworkScanner.get_windows_os_info(new_device)
+        elif device_type.lower() == 'mac':
+            vendor, product, version = NetworkScanner.get_mac_os_info(new_device)
+        else:
+            vendor, product, version = 'Unsupported', 'Unsupported device type', 'N/A'
+
+        # Log if there was a failure in fetching details
+        if product.startswith("Error") or version.startswith("Error"):
+            print(f"Failed to fetch OS information for device {ip} of type {device_type}: {product}, {version}")
+
+        # Create and add DeviceInfo with fetched data
         new_device_info = DeviceInfo(
-            device_id=new_device.id,  # Link to the newly created Device entry
-            ip_address=new_device.ip_address,  # Copy the IP address to devices_information
-            device_type=device_type,  # Copy the device type as well
-            os_version='',  # Placeholder for actual OS version to be updated later
-            open_ports='',  # Placeholder for actual open ports to be updated later
-            apps=''  # Placeholder for apps to be updated later
+            device_id=new_device.id,
+            ip_address=ip,
+            device_type=device_type,
+            Vendor=vendor,
+            Product=product,
+            Version=version
         )
         db.session.add(new_device_info)
-    
-    db.session.commit()  # Commit the transaction to save both Device and DeviceInfo
-    
-    flash('Device details successfully sent to the database!')
+
+    db.session.commit()  # Commit once for all devices to save changes
+
     return redirect(url_for('index'))
+
+
 
 #--------------------------------------------------------------------------------------------------------------------------
 

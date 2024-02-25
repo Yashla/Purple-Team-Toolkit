@@ -1,0 +1,6 @@
+[console_scripts]
+push=tools.push:main
+release=tools.release:main
+sbom=tools.sbom:main
+sphinx=tools.sphinx:main
+
