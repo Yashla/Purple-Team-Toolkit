@@ -43,15 +43,16 @@ def reset_db():
 #------------------------------------------------------------------------------------------------------------------------
 @app.route('/devices')
 def show_devices():
-    devices = Device.query.all()  # Replace with your method to get all devices
+    devices = Device.query.all()
     return render_template('devices.html', devices=devices)
+
 
 #------------------------------------------------------------------------------------------------------------------------
 @app.route('/device_cves/<int:device_id>')
 def show_device_cves(device_id):
+    device = Device.query.get_or_404(device_id)
     device_cves = DeviceCVE.query.filter_by(device_id=device_id).all()
-    return render_template('device_cves.html', device_cves=device_cves, device_id=device_id)
-
+    return render_template('device_cves.html', device=device, device_cves=device_cves)
 
 
 #------------------------------------------------------------------------------------------------------------------------

@@ -1,16 +1,55 @@
-<!-- devices.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Devices</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
     <h1>Discovered Devices</h1>
-    <ul>
-        {% for device in devices %}
-            <li><a href="{{ url_for('show_device_cves', device_id=device.id) }}">{{ device.ip_address }}</a></li>
-        {% endfor %}
-    </ul>
+    <table id="devicesTable">
+        <thead>
+            <tr>
+                <th>IP Address</th>
+                <th>Vendor</th>
+                <th>Product</th>
+                <th>Version</th>
+                <th>View CVEs</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for device in devices %}
+                <tr>
+                    <td>{{ device.ip_address }}</td>
+                    <td>{{ device.device_info.Vendor if device.device_info else 'N/A' }}</td>
+                    <td>{{ device.device_info.Product if device.device_info else 'N/A' }}</td>
+                    <td>{{ device.device_info.Version if device.device_info else 'N/A' }}</td>
+                    <td><a href="{{ url_for('show_device_cves', device_id=device.id) }}">View CVEs</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <script>
+        $(document).ready( function () {
+            $('#devicesTable').DataTable();
+        });
+    </script>
 </body>
 </html>

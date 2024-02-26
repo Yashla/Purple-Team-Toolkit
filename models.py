@@ -11,6 +11,7 @@ class Device(db.Model):
     device_type = db.Column(db.String(255), nullable=False)
     username = db.Column(db.String(255), nullable=False)
     password = db.Column(db.String(255), nullable=False)
+    device_info = db.relationship('DeviceInfo', backref='device', uselist=False, lazy=True)
 
     def __repr__(self):
         return f'<Device {self.ip_address}>'
