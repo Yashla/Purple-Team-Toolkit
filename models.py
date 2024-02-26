@@ -25,3 +25,20 @@ class DeviceInfo(db.Model):
     Vendor = db.Column(db.String(255), nullable=False)
     Product = db.Column(db.String(255), nullable=False)
     Version = db.Column(db.String(255), nullable=False)
+    
+    
+class CVE(db.Model):
+    __tablename__ = 'cves'
+    cve_id = db.Column(db.String(64), primary_key=True)
+    summary = db.Column(db.Text)
+    cvss_v3_score = db.Column(db.Text)
+    cvss_v3_label= db.Column(db.Text)
+    
+class DeviceCVE(db.Model):
+    __tablename__ = 'device_cves'
+    id = db.Column(db.Integer, primary_key=True)
+    device_id = db.Column(db.Integer, db.ForeignKey('devices.id'))
+    cve_id = db.Column(db.String(64), db.ForeignKey('cves.cve_id'))
+
+    device = db.relationship('Device', backref=db.backref('device_cves', lazy=True))
+    cve = db.relationship('CVE', backref=db.backref('device_cves', lazy=True))

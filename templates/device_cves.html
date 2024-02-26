@@ -1,0 +1,16 @@
+<!-- device_cves.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Device CVEs</title>
+</head>
+<body>
+    <h1>CVEs for Device ID: {{ device_id }}</h1>
+    <ul>
+        {% for device_cve in device_cves %}
+            <li>{{ device_cve.cve.cve_id }} - {{ device_cve.cve.summary }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

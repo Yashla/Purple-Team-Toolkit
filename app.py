@@ -7,14 +7,16 @@ from flask import Flask, render_template, request, redirect, url_for, flash, abo
 from network_scanner import NetworkScanner
 from extensions import db
 
+from models import DeviceInfo
+from models import Device
+from models import DeviceCVE
 
 app = Flask(__name__) #starting up flask 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://phpmyadmin:2002@localhost/scan'
 app.secret_key = 'your_secret_key'
 db.init_app(app)
 
-from models import DeviceInfo
-from models import Device
+
 
 #ALLOWED_IP = '192.168.0.4'  # Change this to the IP you want to allow
 
@@ -38,6 +40,18 @@ def reset_db():
     db.create_all()
     # Redirect to the index page after resetting the database
     return redirect(url_for('index'))
+#------------------------------------------------------------------------------------------------------------------------
+@app.route('/devices')
+def show_devices():
+    devices = Device.query.all()  # Replace with your method to get all devices
+    return render_template('devices.html', devices=devices)
+
+#------------------------------------------------------------------------------------------------------------------------
+@app.route('/device_cves/<int:device_id>')
+def show_device_cves(device_id):
+    device_cves = DeviceCVE.query.filter_by(device_id=device_id).all()
+    return render_template('device_cves.html', device_cves=device_cves, device_id=device_id)
+
 
 
 #------------------------------------------------------------------------------------------------------------------------
@@ -50,12 +64,10 @@ def add_device():
         username = request.form.get('username[{}]'.format(ip))
         password = request.form.get('password[{}]'.format(ip))
 
-        # Instantiate a Device object
         new_device = Device(ip_address=ip, device_type=device_type, username=username, password=password)
         db.session.add(new_device)
-        db.session.flush()  # Ensures new_device.id is available immediately for related operations
+        db.session.flush()
 
-        # Fetch OS information based on device type
         if device_type.lower() == 'linux':
             vendor, product, version = NetworkScanner.get_linux_os_info(new_device)
         elif device_type.lower() == 'windows':
@@ -65,56 +77,21 @@ def add_device():
         else:
             vendor, product, version = 'Unsupported', 'Unsupported device type', 'N/A'
 
-        # Log if there was a failure in fetching details
         if product.startswith("Error") or version.startswith("Error"):
             print(f"Failed to fetch OS information for device {ip} of type {device_type}: {product}, {version}")
 
-        # Create and add DeviceInfo with fetched data
-        new_device_info = DeviceInfo(
-            device_id=new_device.id,
-            ip_address=ip,
-            device_type=device_type,
-            Vendor=vendor,
-            Product=product,
-            Version=version
-        )
+        new_device_info = DeviceInfo(device_id=new_device.id, ip_address=ip, device_type=device_type, Vendor=vendor, Product=product, Version=version)
         db.session.add(new_device_info)
 
-    db.session.commit()  # Commit once for all devices to save changes
+        # Pass the device ID to the fetch_and_store_cve_details function
+        NetworkScanner.fetch_and_store_cve_details(vendor, product, version, new_device.id)
 
+    db.session.commit()
     return redirect(url_for('index'))
 
 
 
 #--------------------------------------------------------------------------------------------------------------------------
-
-@app.route('/start_scripts')
-def start_scripts():
-    all_devices = Device.query.all()  # Fetch all devices from the database
-    for device in all_devices:
-        if device.device_type == 'Windows':
-            device.os_info = NetworkScanner.get_windows_os_info(device)
-            # Call your Windows script here and update device information
-            pass
-        elif device.device_type == 'Linux':
-            device.os_info = NetworkScanner.get_linux_os_info(device)
-            # Call your Linux script here and update device information
-            pass
-        elif device.device_type == 'Mac':
-            device.os_info = NetworkScanner.get_mac_os_info(device)
-            # Call your MacBook script here and update device information
-            pass
-        # Update the database with any new information obtained
-        db.session.commit()
-    
-    return render_template('start_scripts.html', devices=all_devices)
-
-
-
-
-
-
-
 
 #------------------------------------------------------------------------------------------------------------------------
 #scan

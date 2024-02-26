@@ -1,0 +1,16 @@
+<!-- devices.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Devices</title>
+</head>
+<body>
+    <h1>Discovered Devices</h1>
+    <ul>
+        {% for device in devices %}
+            <li><a href="{{ url_for('show_device_cves', device_id=device.id) }}">{{ device.ip_address }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

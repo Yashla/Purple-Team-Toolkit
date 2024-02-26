@@ -11,7 +11,14 @@ from paramiko.ssh_exception import AuthenticationException, SSHException
 from models import DeviceInfo
 from extensions import db
 
+import requests
+from bs4 import BeautifulSoup
+import math
+from time import sleep
 
+from extensions import db
+from models import CVE , DeviceCVE
+from datetime import datetime
 
 
 
@@ -150,6 +157,49 @@ class NetworkScanner:
         except Exception as e:
             return "Error", f"An unexpected error occurred: {str(e)}", ""
 
+
+    def fetch_and_store_cve_details(vendor, product, version, device_id):
+        base_url = "https://nvd.nist.gov/vuln/search/results?cpe_version=cpe%3A%2F%3A"
+        start_index = 0
+        url = f"{base_url}{vendor}%3A{product}%3A{version}&startIndex={start_index}"
+        response = requests.get(url)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        num_results = soup.find('strong', {'data-testid': 'vuln-matching-records-count'}).text
+        num_results_nearest_20 = 20 * math.ceil(int(num_results)/20)
+        
+        for index in range(0, num_results_nearest_20, 20):
+            page_url = f"{base_url}{vendor}%3A{product}%3A{version}&startIndex={index}"
+            response = requests.get(page_url)
+            page_soup = BeautifulSoup(response.text, 'html.parser')
+            rows = page_soup.find_all('tr', {'data-testid': lambda x: x and x.startswith('vuln-row')})
+            
+            for row in rows:
+                cve_id = row.find('a', {'data-testid': lambda x: x and x.startswith('vuln-detail-link')}).text.strip()
+                summary = row.find('p', {'data-testid': lambda x: x and x.startswith('vuln-summary')}).text.strip()
+                cvss_v3_score = row.find('a', {'data-testid': lambda x: x and x.startswith('vuln-cvss3-link')}).text.strip()
+                cvss_v3_label = row.find('a', {'data-testid': lambda x: x and x.startswith('vuln-cvss3-link')})['class'][1]
+                
+                # Check if the CVE already exists
+                existing_cve = CVE.query.filter_by(cve_id=cve_id).first()
+                if not existing_cve:
+                    new_cve = CVE(
+                        cve_id=cve_id,
+                        summary=summary,
+                        cvss_v3_score=cvss_v3_score,
+                        cvss_v3_label=cvss_v3_label
+                    )
+                    db.session.add(new_cve)
+                    db.session.flush()  # Flush to ensure new_cve gets an ID if it's new
+
+                # Create or update a DeviceCVE instance linking the CVE to the device
+                existing_device_cve = DeviceCVE.query.filter_by(device_id=device_id, cve_id=cve_id).first()
+                if not existing_device_cve:
+                    new_device_cve = DeviceCVE(device_id=device_id, cve_id=cve_id)
+                    db.session.add(new_device_cve)
+
+                sleep(1.2)  # Be respectful to the server
+        
+        db.session.commit()  # Commit once at the end for efficiency
 
 
 
