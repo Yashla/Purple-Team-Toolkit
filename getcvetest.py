@@ -8,13 +8,13 @@ import math  # Step 1: Import the math module
 #Version = "10.0.19044.3930"
 
 
-#Vendor = "apple"
-#Product = "mac" 
-#Version = "14.0"
+Vendor = "apple"
+Product = "macos" 
+Version = "14.2.1"
 
-Vendor = "canonical"
-Product = "ubuntu_linux" 
-Version = "22.04"
+#Vendor = "canonical"
+#Product = "ubuntu_linux" 
+#Version = "22.04"
 
 
 # Your initial URL setup
