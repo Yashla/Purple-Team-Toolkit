@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SSDP Spoofer Control</title>
+</head>
+<body>
+    <h1>SSDP Spoofer</h1>
+    <form action="/start_ssdp" method="post">
+        <button type="submit">Start SSDP Spoofer</button>
+    </form>
+    <form action="/stop_ssdp" method="post">
+        <button type="submit">Stop SSDP Spoofer</button>
+    </form>
+    {% if output %}
+    <h2>Output:</h2>
+    <pre>{{ output }}</pre>
+    {% endif %}
+</body>
+</html>

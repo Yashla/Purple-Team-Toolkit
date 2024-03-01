@@ -3,19 +3,23 @@ import threading
 #from network_scanner import get_linux_os_info
 #from network_scanner import get_mac_os_info
 from discover_mdnss import discover_services
-from flask import Flask, render_template, request, redirect, url_for, flash, abort
+from flask import Flask, render_template, request, redirect, url_for, flash, abort, jsonify, session
 from network_scanner import NetworkScanner
 from extensions import db
 
 from models import DeviceInfo
 from models import Device
 from models import DeviceCVE
+import subprocess
+import os
+import psutil
 
 app = Flask(__name__) #starting up flask 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://phpmyadmin:2002@localhost/scan'
 app.secret_key = 'your_secret_key'
 db.init_app(app)
 
+process = None 
 
 
 #ALLOWED_IP = '192.168.0.4'  # Change this to the IP you want to allow
@@ -26,12 +30,76 @@ db.init_app(app)
 #        abort(403) 
 
 
-
 ## home page ---------------------------------------------------------------------------------------------------------
 @app.route('/', methods=['GET'])
 def index():
     return render_template('index.html')
 
+#########################################################################################################################
+
+
+@app.route('/ssdp_spoofer')
+def ssdp_spoofer():
+    return render_template('ssdp_spoofer.html', output=session.get('output'))
+
+@app.route('/start_ssdp', methods=['POST'])
+def start_ssdp():
+    global process
+    # Check if the process is not already running
+    if process is None or process.poll() is not None:
+        # Set the environment variable for the subprocess to disable output buffering
+        env = os.environ.copy()
+        env['PYTHONUNBUFFERED'] = "1"
+        
+        # Start the subprocess with the modified environment
+        process = subprocess.Popen(
+            ['python3', '/home/yash/Documents/GitHub/FYP-scan-devices-on-network/essdp/evil/evil_ssdp.py', 'ens37', '--template', 'scanner'],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            env=env  # Pass the modified environment
+        )
+        
+        # Define the path to the output file
+        output_file_path = "/home/yash/Documents/GitHub/FYP-scan-devices-on-network/essdp/evil/output.txt"
+        
+        # Start a thread to collect output from the subprocess
+        threading.Thread(target=collect_output, args=(output_file_path,)).start()
+    
+    # Redirect to the ssdp_spoofer page after starting the subprocess
+    return redirect(url_for('ssdp_spoofer'))
+
+
+@app.route('/stop_ssdp', methods=['POST'])
+def stop_ssdp():
+    global process
+    if process and process.poll() is None:  # If process is running
+        parent_pid = process.pid  # Get the PID of the ssdp spoofer process
+        parent = psutil.Process(parent_pid)  # Get the process using psutil
+        for child in parent.children(recursive=True):  # Iterate over child processes
+            child.kill()  # Terminate the child process
+        process.kill()  # Now kill the parent process
+        process.wait()  # Wait for the killing to complete
+        process = None
+    return redirect(url_for('ssdp_spoofer'))
+
+def collect_output(output_file_path):
+    global process
+    if process is None:
+        return  # Exit early if the process hasn't been started
+
+    with open(output_file_path, "w") as output_file:
+        while True:
+            if process is None or process.poll() is not None:
+                break  # Exit the loop if the process is terminated or completes
+            line = process.stdout.readline()
+            if not line:
+                break  # If there's no more output, exit the loop
+            output_file.write(line)
+            output_file.flush()  # Flush after each write to ensure real-time update
+
+    os.chmod(output_file_path, 0o666)  # Set file permissions to rw-rw-rw- after closing the file
+###########################################################################################################################################################
 
 @app.route('/reset_db')
 def reset_db():
@@ -56,7 +124,49 @@ def show_device_cves(device_id):
 
 
 #------------------------------------------------------------------------------------------------------------------------
+@app.route('/test_details')
+def test_details():
+    return render_template('test_details.html')
 
+@app.route('/test_windows', methods=['POST'])
+def test_windows():
+    ip = request.form['windows_ip']
+    username = request.form['windows_username']
+    password = request.form['windows_password']
+    message = NetworkScanner.test_windows_connection(ip, username, password)
+    flash(message)  # Using Flask's flash to display messages
+    return redirect(url_for('test_details'))
+
+@app.route('/test_ssh', methods=['POST'])
+def test_ssh():
+    ip = request.form['ssh_ip']
+    username = request.form['ssh_username']
+    password = request.form['ssh_password']
+    message = NetworkScanner.test_ssh_connection(ip, username, password)
+    flash(message)
+    return redirect(url_for('test_details'))
+#-------------------------------------------------------------------------------------------------------------------------
+
+@app.route('/upnp_devices_detailed')
+def display_upnp_devices():
+    devices_info = NetworkScanner.discover_upnp_devices_detailed()
+    return render_template('upnp_devices_detailed.html', devices=devices_info)
+
+#-------------------------------------------------------------------------------------------------------------------------
+
+@app.route('/upnp_devices_github')
+def run_script():
+    # Assuming your script prints its output, capture it using subprocess
+    result = subprocess.run(['python3', 'upnp_info.py'], capture_output=True, text=True)
+    output = result.stdout  # Get the standard output of your script
+    # Pass the output to a new template or return it directly
+    return render_template('upnp_results_github.html', output=output)
+
+
+
+
+
+#-------------------------------------------------------------------------------------------------------------------------
 @app.route('/add_device', methods=['POST'])
 def add_device():
     ips = request.form.getlist('ip[]')
@@ -73,6 +183,7 @@ def add_device():
             vendor, product, version = NetworkScanner.get_linux_os_info(new_device)
         elif device_type.lower() == 'windows':
             vendor, product, version = NetworkScanner.get_windows_os_info(new_device)
+            
         elif device_type.lower() == 'mac':
             vendor, product, version = NetworkScanner.get_mac_os_info(new_device)
         else:
@@ -98,6 +209,9 @@ def add_device():
 #scan
 @app.route('/scan', methods=['GET', 'POST'])
 def scan_network():
+    
+    ip_command_output = subprocess.run(['ip', 'a'], stdout=subprocess.PIPE, text=True).stdout
+    
     if request.method == 'POST':
         subnet = request.form['subnet']
         scanner = NetworkScanner()
@@ -105,7 +219,7 @@ def scan_network():
         scanner.scan_mdns()
         scanner.refine_linux_array()
         return render_template('scan.html', subnet=subnet, windows=scanner.windows_array, linux=scanner.linux_array, macbooks=scanner.macbook_array, scanned=True)
-    return render_template('scan.html', scanned=False)
+    return render_template('scan.html', scanned=False, ip_output=ip_command_output)
 
 
 #-------------------------------------------------------------------------------------------------------------------------

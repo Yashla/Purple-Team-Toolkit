@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+
+
+
     <meta charset="UTF-8">
     <title>Scan Network</title>
     <script>
@@ -48,6 +51,23 @@
             });
         }
 
+        function validateDeviceDetails() {
+            // Find all device input fields for usernames and passwords
+            var allUsernames = document.querySelectorAll('input[name^="username"]');
+            var allPasswords = document.querySelectorAll('input[name^="password"]');
+
+            // Check if any username or password is empty
+            for (var i = 0; i < allUsernames.length; i++) {
+                if (allUsernames[i].value.trim() === '' || allPasswords[i].value.trim() === '') {
+                    alert("Please fill in all details for all devices.");
+                    return false; // Prevent the form submission
+                }
+            }
+            return true; // Allow the form submission if all fields are filled
+        }
+
+
+
         function clearAllFields() {
             // Target all text and password inputs within the form
             document.querySelectorAll('form input[type="text"], form input[type="password"]').forEach(function (inputField) {
@@ -61,6 +81,19 @@
             document.getElementById('globalMacUsername').value = '';
             document.getElementById('globalMacPassword').value = '';
         }
+
+        function validateNetworkAddress() {
+            var subnetInput = document.querySelector('input[name="subnet"]');
+            var subnetPattern = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\/(3[0-2]|[12]?[0-9]))$/;
+            if (!subnetPattern.test(subnetInput.value)) {
+                alert("Please enter a valid IP address with subnet mask (e.g., 192.168.1.1/24).");
+                event.preventDefault();
+                return false;
+            }
+            return true;
+        }
+
+
     </script>
     </script>
 </head>
@@ -71,6 +104,11 @@
     <form action="" method="post">
         <input type="text" name="subnet" placeholder="192.168.0.0/24">
         <button type="submit">Scan</button>
+
+        {% if ip_output %}
+        <pre>{{ ip_output }}</pre>
+        {% endif %}
+
     </form>
     {% else %}
     <h1>Scan Results for {{ subnet }}</h1>
@@ -91,7 +129,8 @@
         <button onclick="autofillMacCredentials()">Autofill MacBook Credentials</button>
     </div>
 
-    <form action="/add_device" method="post">
+    <form action="/add_device" method="post" onsubmit="return validateDeviceDetails()"
+        onsubmit="return showLoaderAndValidateDeviceDetails()">
         <h2>Devices Found</h2>
         {% for ip in windows %}
         <div>
@@ -124,13 +163,57 @@
         <br>
         <button type="submit">Send Log in Details to Database</button>
     </form>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Connection Test</title>
+    </head>
+
+    <body>
+        <h1>Windows Detail Tester</h1>
+        <form action="/test_windows" method="post">
+            IP Address: <input type="text" name="windows_ip">
+            WRI Username: <input type="text" name="windows_username">
+            WRI Password: <input type="password" name="windows_password">
+            <button type="submit">Test Windows Connection</button>
+        </form>
+
+        <h1>SSH Detail Tester</h1>
+        <form action="/test_ssh" method="post">
+            IP Address: <input type="text" name="ssh_ip">
+            SSH Username: <input type="text" name="ssh_username">
+            SSH Password: <input type="password" name="ssh_password">
+            <button type="submit">Test SSH Connection</button>
+        </form>
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+
+    </body>
+
+
+    </html>
+
+
+    <br>
+    <br>
+    <br>
     <br>
     <div>
         <button type="button" onclick="clearAllFields()">Clear All Fields</button>
     </div>
     <br>
-    <a href="{{ url_for('index') }}"><button>Back to Home</button></a>
+    <br>
+    <button onclick="window.location.href='/'">home</button>
     {% endif %}
+
 </body>
 
 </html>

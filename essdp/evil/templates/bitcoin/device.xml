@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+  <specVersion>
+    <major>1</major>
+    <minor>0</minor>
+  </specVersion>
+  <URLBase>http://$local_ip:$local_port</URLBase>
+  <device>
+    <presentationURL>http://$local_ip:$local_port/present.html</presentationURL>
+    <deviceType>urn:schemas-upnp-org:device:Basic:1</deviceType>
+    <friendlyName>Bitcoin Wallet</friendlyName>
+    <modelDescription>Bitcoin Password Storage</modelDescription>
+    <manufacturer>Bitcoin.org</manufacturer>
+    <modelName>Core</modelName>
+    <UDN>$session_usn</UDN>
+    <serviceList>
+      <service>
+        <serviceType>urn:schemas-upnp-org:device:Basic:1</serviceType>
+        <serviceId>urn:schemas-upnp-org:device:Basic</serviceId>
+        <controlURL>/ssdp/service-desc.xml</controlURL>
+        <eventSubURL>/ssdp/service-desc.xml</eventSubURL>
+        <SCPDURL>/ssdp/service-desc.xml</SCPDURL>
+      </service>
+    </serviceList>
+
+  </device>
+</root>
+

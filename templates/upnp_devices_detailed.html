@@ -1,0 +1,28 @@
+<!-- templates/upnp_devices_detailed.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UPnP Devices Detailed</title>
+</head>
+<body>
+    <h1>Discovered UPnP Devices</h1>
+    {% if devices %}
+        {% for device in devices %}
+            <div>
+                <h2>{{ device['Device Name'] }}</h2>
+                <p><strong>Location:</strong> <a href="{{ device['Location'] }}" target="_blank">{{ device['Location'] }}</a></p>
+                <p><strong>Manufacturer:</strong> {{ device['Manufacturer'] }}</p>
+                <p><strong>Model Name:</strong> {{ device['Model Name'] }}</p>
+                <p><strong>Device Type:</strong> {{ device['Device Type'] }}</p>
+                <p><strong>UDN:</strong> {{ device['UDN'] }}</p>
+                <p><strong>Services:</strong> {{ device['Services']|join(", ") }}</p>
+                <p><strong>Presentation URL:</strong> <a href="{{ device['Presentation URL'] }}">{{ device['Presentation URL'] }}</a></p>
+            </div>
+            <hr>
+        {% endfor %}
+    {% else %}
+        <p>No UPnP devices found.</p>
+    {% endif %}
+</body>
+</html>
