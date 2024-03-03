@@ -43,3 +43,10 @@ class DeviceCVE(db.Model):
 
     device = db.relationship('Device', backref=db.backref('device_cves', lazy=True))
     cve = db.relationship('CVE', backref=db.backref('device_cves', lazy=True))
+
+
+class SSDPOutput(db.Model):
+    __tablename__ = 'ssdp_outputs'
+    id = db.Column(db.Integer, primary_key=True)
+    file_name = db.Column(db.String(255), nullable=False)  # Column to store the file name
+    output_blob = db.Column(db.LargeBinary, nullable=False)  # Column to store the file content as a BLOB

@@ -10,9 +10,11 @@ from extensions import db
 from models import DeviceInfo
 from models import Device
 from models import DeviceCVE
+from models import SSDPOutput
 import subprocess
 import os
 import psutil
+from datetime import datetime
 
 app = Flask(__name__) #starting up flask 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://phpmyadmin:2002@localhost/scan'
@@ -44,6 +46,7 @@ def ssdp_spoofer():
 
 @app.route('/start_ssdp', methods=['POST'])
 def start_ssdp():
+    global process, output_file_path_global
     global process
     # Check if the process is not already running
     if process is None or process.poll() is not None:
@@ -61,10 +64,12 @@ def start_ssdp():
         )
         
         # Define the path to the output file
-        output_file_path = "/home/yash/Documents/GitHub/FYP-scan-devices-on-network/essdp/evil/output.txt"
+        now = datetime.now()
+        file_name = f"ssdp_spoofer_results_{now.strftime('%Y-%m-%d_%H-%M-%S')}.txt"
+        output_file_path_global = f"/home/yash/Documents/GitHub/FYP-scan-devices-on-network/essdp/evil/{file_name}"
         
         # Start a thread to collect output from the subprocess
-        threading.Thread(target=collect_output, args=(output_file_path,)).start()
+        threading.Thread(target=collect_output, args=(output_file_path_global,)).start()
     
     # Redirect to the ssdp_spoofer page after starting the subprocess
     return redirect(url_for('ssdp_spoofer'))
@@ -72,7 +77,7 @@ def start_ssdp():
 
 @app.route('/stop_ssdp', methods=['POST'])
 def stop_ssdp():
-    global process
+    global process, output_file_path_global
     if process and process.poll() is None:  # If process is running
         parent_pid = process.pid  # Get the PID of the ssdp spoofer process
         parent = psutil.Process(parent_pid)  # Get the process using psutil
@@ -81,6 +86,32 @@ def stop_ssdp():
         process.kill()  # Now kill the parent process
         process.wait()  # Wait for the killing to complete
         process = None
+
+        try:
+            with open(output_file_path_global, "a") as file:  # Open in append mode
+                timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                file.write(f"\n\nFile has been saved on {timestamp}")
+        except IOError as e:
+            print(f"Error appending to the SSDP output file: {e}")
+
+        # Now, store the updated output file in the database
+        try:
+            with open(output_file_path_global, "rb") as file:  # Now open in binary read mode
+                file_content = file.read()
+                file_name = os.path.basename(output_file_path_global)
+                new_output = SSDPOutput(file_name=file_name, output_blob=file_content)
+                db.session.add(new_output)
+                db.session.commit()
+        except IOError as e:
+            print(f"Error reading the SSDP output file: {e}")
+            # Optionally, handle the error
+            
+        try:
+            os.remove(output_file_path_global)
+            print(f"File {output_file_path_global} deleted successfully.")
+        except OSError as e:
+            print(f"Error deleting the SSDP output file: {e}")
+
     return redirect(url_for('ssdp_spoofer'))
 
 def collect_output(output_file_path):
@@ -88,7 +119,15 @@ def collect_output(output_file_path):
     if process is None:
         return  # Exit early if the process hasn't been started
 
-    with open(output_file_path, "w") as output_file:
+    # Determine if the file already exists to avoid overwriting the initial timestamp
+    file_exists = os.path.exists(output_file_path)
+
+    with open(output_file_path, "a") as output_file:  # Open in append mode
+        # If the file does not exist, it's the first write operation, so add the timestamp
+        if not file_exists:
+            start_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            output_file.write(f"File created on {start_time}\n\n")
+
         while True:
             if process is None or process.poll() is not None:
                 break  # Exit the loop if the process is terminated or completes
@@ -98,7 +137,7 @@ def collect_output(output_file_path):
             output_file.write(line)
             output_file.flush()  # Flush after each write to ensure real-time update
 
-    os.chmod(output_file_path, 0o666)  # Set file permissions to rw-rw-rw- after closing the file
+    os.chmod(output_file_path, 0o644)  # Set file permissions to rw-rw-rw- after closing the file
 ###########################################################################################################################################################
 
 @app.route('/reset_db')
