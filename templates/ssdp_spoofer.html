@@ -2,6 +2,14 @@
 <html>
 <head>
     <title>SSDP Spoofer Control</title>
+    <script type="text/javascript">
+        function confirmAction(event, message) {
+            const confirmed = confirm(message);
+            if (!confirmed) {
+                event.preventDefault();
+            }
+        }
+    </script>
 </head>
 <body>
     <h1>SSDP Spoofer</h1>
@@ -17,9 +25,31 @@
     <pre>{{ output }}</pre>
     {% endif %}
     <br>
+    <table border="1">
+        <tr>
+            <th>File Name</th>
+            <th>Actions</th>
+        </tr>
+        {% for ssdp_output in ssdp_outputs %}
+        <tr>
+            <td>{{ ssdp_output.file_name }}</td>
+            <td>
+                <!-- Download button -->
+                <form action="/download_ssdp_output/{{ ssdp_output.id }}" method="get" onsubmit="confirmAction(event, 'Are you sure you want to download this file?')">
+                    <button type="submit">Download</button>
+                </form>
+                <!-- Delete button -->
+                <form action="/delete_ssdp_output/{{ ssdp_output.id }}" method="post" onsubmit="confirmAction(event, 'Are you sure you want to delete this file?')">
+                    <button type="submit">Delete</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
     <br>
     <button onclick="window.location.href='/'">Home</button>
+    <br>
+    <br>
 </body>
-
-
 </html>

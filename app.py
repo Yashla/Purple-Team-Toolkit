@@ -1,9 +1,10 @@
+from io import BytesIO
 import threading
 #from network_scanner import get_windows_os_info
 #from network_scanner import get_linux_os_info
 #from network_scanner import get_mac_os_info
 from discover_mdnss import discover_services
-from flask import Flask, render_template, request, redirect, url_for, flash, abort, jsonify, session
+from flask import Flask, render_template, request, redirect, send_file, url_for, flash, abort, jsonify, session, Response
 from network_scanner import NetworkScanner
 from extensions import db
 
@@ -15,6 +16,8 @@ import subprocess
 import os
 import psutil
 from datetime import datetime
+
+from io import BytesIO
 
 app = Flask(__name__) #starting up flask 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://phpmyadmin:2002@localhost/scan'
@@ -42,7 +45,9 @@ def index():
 
 @app.route('/ssdp_spoofer')
 def ssdp_spoofer():
-    return render_template('ssdp_spoofer.html', output=session.get('output'))
+    ssdp_outputs = SSDPOutput.query.all()
+    return render_template('ssdp_spoofer.html', ssdp_outputs=ssdp_outputs, output=session.get('output'))
+
 
 @app.route('/start_ssdp', methods=['POST'])
 def start_ssdp():
@@ -138,6 +143,27 @@ def collect_output(output_file_path):
             output_file.flush()  # Flush after each write to ensure real-time update
 
     os.chmod(output_file_path, 0o644)  # Set file permissions to rw-rw-rw- after closing the file
+    
+    
+
+
+@app.route('/download_ssdp_output/<int:ssdp_output_id>')
+def download_ssdp_output(ssdp_output_id):
+    ssdp_output = SSDPOutput.query.get_or_404(ssdp_output_id)
+    # Ensure the output is decoded to a string if it's stored as binary
+    output_data = ssdp_output.output_blob.decode('utf-8') if isinstance(ssdp_output.output_blob, bytes) else ssdp_output.output_blob
+    # Create a response with the file content, set the appropriate headers for download
+    response = Response(output_data, mimetype="text/plain", headers={"Content-Disposition": f"attachment;filename={ssdp_output.file_name}"})
+    return response
+
+@app.route('/delete_ssdp_output/<int:ssdp_output_id>', methods=['POST'])
+def delete_ssdp_output(ssdp_output_id):
+    ssdp_output = SSDPOutput.query.get_or_404(ssdp_output_id)
+    db.session.delete(ssdp_output)
+    db.session.commit()
+    flash('File deleted successfully.', 'success')
+    return redirect(url_for('ssdp_spoofer'))
+
 ###########################################################################################################################################################
 
 @app.route('/reset_db')
