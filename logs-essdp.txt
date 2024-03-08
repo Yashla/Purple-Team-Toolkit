@@ -23,3 +23,5 @@ Sun, 03 Mar 2024 17:20:29 +0000:    [91m[CREDS GIVEN]  [0mHOST: 192.168.0.4, F
 Sun, 03 Mar 2024 23:58:41 +0000:    [91m[CREDS GIVEN]  [0mHOST: 192.168.0.4, FORM-POST CREDS: username=hello&password=hello
 Mon, 04 Mar 2024 00:49:31 +0000:    [91m[CREDS GIVEN]  [0mHOST: 192.168.0.4, FORM-POST CREDS: username=yash&password=yash
 Mon, 04 Mar 2024 01:00:22 +0000:    [91m[CREDS GIVEN]  [0mHOST: 192.168.0.4, FORM-POST CREDS: username=yash&password=nigga
+Mon, 04 Mar 2024 11:21:48 +0000:    [91m[CREDS GIVEN]  [0mHOST: 192.168.0.4, FORM-POST CREDS: username=Vitortesting+&password=
+Mon, 04 Mar 2024 11:21:57 +0000:    [91m[CREDS GIVEN]  [0mHOST: 192.168.0.4, FORM-POST CREDS: username=Vitortesting+&password=Vitortesting+
