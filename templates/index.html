@@ -1,16 +1,69 @@
 <html>
+    <head>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column; /* Stack elements vertically */
+                justify-content: flex-start; /* Align to the top */
+                align-items: center; /* Center items horizontally */
+                height: 100vh;
+                margin: 0;
+                padding-top: 20px;
+                font-family: Arial, sans-serif; /* Use a common font */
+            }
+            .header {
+                color: #800080; /* Purple color for the header */
+                font-size: 24px; /* Larger font size for the header */
+                margin-bottom: 30px; /* Space between the header and the buttons */
+            }
+            .button-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            button {
+                width: 150px;
+                height: 50px;
+                margin: 5px;
+                font-size: 16px;
+                border-radius: 10px;
+                color: white;
+                border: 1px solid transparent;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                transition: background-color 0.3s ease, transform 0.1s ease;
+            }
+            button.red {
+                background-color: #dc3545;
+            }
+            button.blue {
+                background-color: #007bff;
+            }
+            button:focus {
+                outline: none;
+                border-color: #fff;
+                transform: scale(1.05);
+            }
+            button:hover {
+                opacity: 0.9;
+            }
+        </style>
+    </head>
     <body>
-        <p>
-        </p>
-        <button onclick="window.location.href='/mdns_discovery'">mDNS</button>
-        <button onclick="window.location.href='/scan'">Scan now </button>
-        <button onclick="window.location.href='/devices'">show devices  </button>
-        <button onclick="window.location.href='/test_details'">test details</details>  </button>
-        <button onclick="window.location.href='/upnp_devices_detailed'">discover upnp detailed</details>  </button>
-        <button onclick="window.location.href='/upnp_devices_github'">discover upnp detailed github   </button>
-        <button onclick="confirmReset()">reset tables</button>
-        <button onclick="window.location.href='/ssdp_spoofer'">ssdp spoofer </button>
-
+        <div class="header">Purple Team Testing Toolkit</div>
+        <div class="button-container">
+            <!-- Red Buttons -->
+            <button class="red" onclick="window.location.href='/mdns_discovery'">mDNS</button>
+            <button class="red" onclick="window.location.href='/upnp_devices_detailed'">discover upnp detailed</button>
+            <button class="red" onclick="window.location.href='/upnp_devices_github'">discover upnp detailed github</button>
+            <button class="red" onclick="window.location.href='/ssdp_spoofer'">ssdp spoofer</button>
+            
+            <!-- Blue Buttons -->
+            <button class="blue" onclick="window.location.href='/scan'">Scan now</button>
+            <button class="blue" onclick="window.location.href='/devices'">show devices</button>
+            <button class="blue" onclick="window.location.href='/test_details'">test details</button>
+            <button class="blue" onclick="confirmReset()">reset tables</button>
+        </div>
         
         <script>
             function confirmReset() {
@@ -18,6 +71,6 @@
                     window.location.href = "/reset_db";
                 }
             }
-            </script>
+        </script>
     </body>
 </html>
