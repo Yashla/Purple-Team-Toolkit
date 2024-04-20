@@ -1,0 +1,41 @@
+File created on 2024-04-16 21:09:32
+
+
+___________     .__.__    _________ _________________ __________
+\_   _____/__  _|__|  |  /   _____//   _____/\______ \\______   \
+ |    __)_\  \/ /  |  |  \_____  \ \_____  \  |    |  \|     ___/
+ |        \\   /|  |  |__/        \/        \ |    `   \    |
+/_______  / \_/ |__|____/_______  /_______  //_______  /____|
+        \/                      \/        \/         \/
+
+...by initstring (github.com/initstring)
+
+
+
+
+########################################
+[94m[*] [0mEVIL TEMPLATE:           /home/yash/Documents/GitHub/FYP-scan-devices-on-network/essdp/evil/templates/scanner
+[94m[*] [0mMSEARCH LISTENER:        ens37
+[94m[*] [0mDEVICE DESCRIPTOR:       http://192.168.0.171:8888/ssdp/device-desc.xml
+[94m[*] [0mSERVICE DESCRIPTOR:      http://192.168.0.171:8888/ssdp/service-desc.xml
+[94m[*] [0mPHISHING PAGE:           http://192.168.0.171:8888/ssdp/present.html
+[94m[*] [0mSMB POINTER:             file://///192.168.0.171/smb/hash.jpg
+########################################
+
+
+
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/yash/Documents/GitHub/FYP-scan-devices-on-network/essdp/evil/evil_ssdp.py", line 613, in serve_html
+    upnp_server = MultiThreadedHTTPServer((local_ip, local_port), upnp)
+  File "/usr/lib/python3.10/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.10/http/server.py", line 137, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.10/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
