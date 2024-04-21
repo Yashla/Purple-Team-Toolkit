@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+    <meta charset="UTF-8">
+    <title>Scan Network</title>
+    <script>
+        function autofillWindowsCredentials() {
+            var username = document.getElementById('globalWindowsUsername').value;
+            var password = document.getElementById('globalWindowsPassword').value;
+
+            document.querySelectorAll('input[type="hidden"][value="Windows"]').forEach(function (hiddenInput) {
+                var parentDiv = hiddenInput.closest('div');
+                var usernameInput = parentDiv.querySelector('input[name^="username"]');
+                var passwordInput = parentDiv.querySelector('input[name^="password"]');
+
+                usernameInput.value = username;
+                passwordInput.value = password;
+            });
+        }
+
+        function autofillLinuxCredentials() {
+            var username = document.getElementById('globalLinuxUsername').value;
+            var password = document.getElementById('globalLinuxPassword').value;
+
+            document.querySelectorAll('input[type="hidden"][value="Linux"]').forEach(function (hiddenInput) {
+                var parentDiv = hiddenInput.closest('div');
+                var usernameInput = parentDiv.querySelector('input[name^="username"]');
+                var passwordInput = parentDiv.querySelector('input[name^="password"]');
+
+                usernameInput.value = username;
+                passwordInput.value = password;
+            });
+        }
+
+        // New function to autofill MacBook credentials
+        function autofillMacCredentials() {
+            var username = document.getElementById('globalMacUsername').value;
+            var password = document.getElementById('globalMacPassword').value;
+
+            document.querySelectorAll('input[type="hidden"][value="Mac"]').forEach(function (hiddenInput) {
+                var parentDiv = hiddenInput.closest('div');
+                var usernameInput = parentDiv.querySelector('input[name^="username"]');
+                var passwordInput = parentDiv.querySelector('input[name^="password"]');
+
+                usernameInput.value = username;
+                passwordInput.value = password;
+            });
+        }
+
+        function validateDeviceDetails() {
+            // Find all device input fields for usernames and passwords
+            var allUsernames = document.querySelectorAll('input[name^="username"]');
+            var allPasswords = document.querySelectorAll('input[name^="password"]');
+
+            // Check if any username or password is empty
+            for (var i = 0; i < allUsernames.length; i++) {
+                if (allUsernames[i].value.trim() === '' || allPasswords[i].value.trim() === '') {
+                    alert("Please fill in all details for all devices.");
+                    return false; // Prevent the form submission
+                }
+            }
+            return true; // Allow the form submission if all fields are filled
+        }
+
+
+
+        function clearAllFields() {
+            // Target all text and password inputs within the form
+            document.querySelectorAll('form input[type="text"], form input[type="password"]').forEach(function (inputField) {
+                inputField.value = ''; // Clear each field
+            });
+            // Clear global autofill fields for Windows, Linux, and MacBook
+            document.getElementById('globalWindowsUsername').value = '';
+            document.getElementById('globalWindowsPassword').value = '';
+            document.getElementById('globalLinuxUsername').value = '';
+            document.getElementById('globalLinuxPassword').value = '';
+            document.getElementById('globalMacUsername').value = '';
+            document.getElementById('globalMacPassword').value = '';
+        }
+
+        function validateNetworkAddress() {
+            var subnetInput = document.querySelector('input[name="subnet"]');
+            var subnetPattern = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\/(3[0-2]|[12]?[0-9]))$/;
+            if (!subnetPattern.test(subnetInput.value)) {
+                alert("Please enter a valid IP address with subnet mask (e.g., 192.168.1.1/24).");
+                event.preventDefault();
+                return false;
+            }
+            return true;
+        }
+
+
+    </script>
+    </script>
+</head>
+
+<body>
+    {% if not scanned %}
+    <h1>Enter Network to Scan</h1>
+    <form action="" method="post">
+        <input type="text" name="subnet" placeholder="192.168.0.0/24">
+        <button type="submit">Scan</button>
+
+        {% if ip_output %}
+        <pre>{{ ip_output }}</pre>
+        {% endif %}
+
+    </form>
+    {% else %}
+    <h1>Scan Results for {{ subnet }}</h1>
+    <!-- Global username/password inputs and autofill button -->
+    <div>
+        <input type="text" id="globalWindowsUsername" placeholder="Global WRI Username">
+        <input type="password" id="globalWindowsPassword" placeholder="Global WRI Password">
+        <button onclick="autofillWindowsCredentials()">Autofill Windows Credentials</button>
+    </div>
+    <div>
+        <input type="text" id="globalLinuxUsername" placeholder="Global Linux Username">
+        <input type="password" id="globalLinuxPassword" placeholder="Global Linux Password">
+        <button onclick="autofillLinuxCredentials()">Autofill Linux Credentials</button>
+    </div>
+    <div>
+        <input type="text" id="globalMacUsername" placeholder="Global MacBook Username">
+        <input type="password" id="globalMacPassword" placeholder="Global MacBook Password">
+        <button onclick="autofillMacCredentials()">Autofill MacBook Credentials</button>
+    </div>
+
+    <!--<form action="/add_device" method="post" onsubmit="return validateDeviceDetails()" -->
+    <form action="{{ url_for('cve_scanner.add_device') }}" method="post" onsubmit="return validateDeviceDetails()"
+        onsubmit="return showLoaderAndValidateDeviceDetails()">
+        <h2>Devices Found</h2>
+        {% for ip in windows %}
+        <div>
+            <h3>Windows Device IP: {{ ip }}</h3>
+            <input type="hidden" name="type[{{ ip }}]" value="Windows">
+            <input type="hidden" name="ip[]" value="{{ ip }}">
+            <input type="text" name="username[{{ ip }}]" placeholder="WRI Username">
+            <input type="password" name="password[{{ ip }}]" placeholder="WRI Password">
+        </div>
+        {% endfor %}
+        {% for ip in linux %}
+        <div>
+            <h3>Linux Device IP: {{ ip }}</h3>
+            <input type="hidden" name="type[{{ ip }}]" value="Linux">
+            <input type="hidden" name="ip[]" value="{{ ip }}">
+            <input type="text" name="username[{{ ip }}]" placeholder="SSH Username">
+            <input type="password" name="password[{{ ip }}]" placeholder="SSH Password">
+        </div>
+        {% endfor %}
+        {% for ip in macbooks %}
+        <div>
+            <h3>MacBook Device IP: {{ ip }}</h3>
+            <input type="hidden" name="type[{{ ip }}]" value="Mac">
+            <input type="hidden" name="ip[]" value="{{ ip }}">
+            <input type="text" name="username[{{ ip }}]" placeholder="SSH Username">
+            <input type="password" name="password[{{ ip }}]" placeholder="SSH Password">
+        </div>
+        <br>
+        {% endfor %}
+        <br>
+        <button type="submit">Send Log in Details to Database</button>
+    </form>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Connection Test</title>
+    </head>
+
+    <body>
+        <h1>Windows Detail Tester</h1>
+        <form action="/test_windows" method="post">
+            IP Address: <input type="text" name="windows_ip">
+            WRI Username: <input type="text" name="windows_username">
+            WRI Password: <input type="password" name="windows_password">
+            <button type="submit">Test Windows Connection</button>
+        </form>
+
+        <h1>SSH Detail Tester</h1>
+        <form action="/test_ssh" method="post">
+            IP Address: <input type="text" name="ssh_ip">
+            SSH Username: <input type="text" name="ssh_username">
+            SSH Password: <input type="password" name="ssh_password">
+            <button type="submit">Test SSH Connection</button>
+        </form>
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+
+    </body>
+
+
+    </html>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+        <button type="button" onclick="clearAllFields()">Clear All Fields</button>
+    </div>
+    <br>
+    <br>
+    <button onclick="window.location.href='/'">home</button>
+    {% endif %}
+
+</body>
+
+</html>

@@ -50,3 +50,13 @@ class SSDPOutput(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     file_name = db.Column(db.String(255), nullable=False)  # Column to store the file name
     output_blob = db.Column(db.LargeBinary, nullable=False)  # Column to store the file content as a BLOB
+    
+class SNMP_Output(db.Model):
+    __tablename__ = 'snmp_outputs'
+    
+    id = db.Column(db.Integer, primary_key=True)
+    filename = db.Column(db.String(255), nullable=False)
+    data = db.Column(db.LargeBinary, nullable=False)  # Storing the file content as a binary large object
+
+   ## def __repr__(self):
+    ##    return f'<SNMP_Output {self.filename}>'
