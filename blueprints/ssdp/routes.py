@@ -23,7 +23,6 @@ def ssdp_spoofer():
     return render_template('ssdp_spoofer.html', ssdp_outputs=ssdp_outputs, output=session.get('output'))
 
 @ssdp.route('/start_ssdp', methods=['POST'])
-@login_required
 def start_ssdp():
     global process, output_file_path_global
     # Check if the process is not already running
@@ -44,7 +43,7 @@ def start_ssdp():
         # Define the path to the output file
         now = datetime.now()
         file_name = f"ssdp_spoofer_results_{now.strftime('%Y-%m-%d_%H-%M-%S')}.txt"
-        output_file_path_global = f"/home/yash/Documents/GitHub/FYP-SCAN-DEVICES-ON-NETWORK-Final/blueprints/ssdp/essdp/evil/{file_name}"
+        output_file_path_global = f"/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/ssdp/essdp/evil/{file_name}"
         
         # Start a thread to collect output from the subprocess
         threading.Thread(target=collect_output, args=(output_file_path_global,)).start()
@@ -54,7 +53,6 @@ def start_ssdp():
 
 
 @ssdp.route('/stop_ssdp', methods=['POST'])
-@login_required
 def stop_ssdp():
     global process, output_file_path_global
     if process and process.poll() is None:  # If process is running
@@ -122,7 +120,6 @@ def collect_output(output_file_path):
 
 
 @ssdp.route('/download_ssdp_output/<int:ssdp_output_id>')
-@login_required
 def download_ssdp_output(ssdp_output_id):
     ssdp_output = SSDPOutput.query.get_or_404(ssdp_output_id)
     # Ensure the output is decoded to a string if it's stored as binary
@@ -132,7 +129,6 @@ def download_ssdp_output(ssdp_output_id):
     return response
 
 @ssdp.route('/delete_ssdp_output/<int:ssdp_output_id>', methods=['POST'])
-@login_required
 def delete_ssdp_output(ssdp_output_id):
     ssdp_output = SSDPOutput.query.get_or_404(ssdp_output_id)
     db.session.delete(ssdp_output)

@@ -72,7 +72,8 @@
 </head>
 <body>
     <div class="header">Purple Team Testing Toolkit</div>
-    <button onclick="window.location.href='{{ url_for('auth.logout') }}'" class="btn btn-secondary">logout</button>
+    <!-- Changed btn-secondary to btn-danger for the logout button -->
+    <button onclick="window.location.href='{{ url_for('auth.logout') }}'" class="btn btn-danger">Logout</button>
     <div class="button-container">
         <!-- Red Buttons -->
         <button class="red" onclick="window.location.href='{{ url_for('mdns.mdns_discovery') }}'">mDNS Search</button>

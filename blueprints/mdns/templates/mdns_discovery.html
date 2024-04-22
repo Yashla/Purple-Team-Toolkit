@@ -9,10 +9,10 @@
         function validateServiceTypes() {
             const inputField = document.getElementById('service_types');
             const serviceTypes = inputField.value.split(',').map(st => st.trim());
-            const allValid = serviceTypes.every(st => st.endsWith('.local'));
+            const allValid = serviceTypes.every(st => st.endsWith('.local.'));
 
             if (!allValid) {
-                alert('Each service type must end with ".local". Please correct your input.');
+                alert('Each service type must end with ".local.". Please correct your input.');
                 return false; // Prevent form submission if validation fails
             }
             return true; // Allow form submission if all service types are valid

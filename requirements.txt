@@ -1,0 +1,17 @@
+alembic==1.13.1
+beautifulsoup4==4.12.3
+Flask==3.0.3
+Flask_Login==0.6.3
+Flask_Migrate==4.0.7
+flask_sqlalchemy==3.1.1
+netifaces==0.11.0
+paramiko==2.9.3
+psutil==5.9.8
+pysnmp==4.4.12
+pywinrm==0.4.3
+Requests==2.31.0
+scapy==2.5.0
+SQLAlchemy==2.0.27
+upnpclient==1.0.3
+Werkzeug==3.0.2
+zeroconf==0.132.2
