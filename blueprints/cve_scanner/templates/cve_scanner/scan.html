@@ -63,6 +63,19 @@
             return true; // Allow the form submission if all fields are filled
         }
 
+        // Function to validate the network address format
+        function validateNetworkAddress(event) {
+            var subnetInput = document.querySelector('input[name="subnet"]');
+            var subnetPattern = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\/(3[0-2]|[12]?[0-9]))$/;
+            if (!subnetPattern.test(subnetInput.value)) {
+                alert("Please enter a valid IP address with subnet mask (e.g., 192.168.1.1/24).");
+                event.preventDefault();
+                return false;
+            }
+            return true;
+        }
+
+
 
 
         function clearAllFields() {
@@ -78,17 +91,6 @@
             document.getElementById('globalMacUsername').value = '';
             document.getElementById('globalMacPassword').value = '';
         }
-
-        function validateNetworkAddress() {
-            var subnetInput = document.querySelector('input[name="subnet"]');
-            var subnetPattern = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\/(3[0-2]|[12]?[0-9]))$/;
-            if (!subnetPattern.test(subnetInput.value)) {
-                alert("Please enter a valid IP address with subnet mask (e.g., 192.168.1.1/24).");
-                event.preventDefault();
-                return false;
-            }
-            return true;
-        }
     </script>
     </script>
 </head>
@@ -96,7 +98,8 @@
     <div class="container mt-4">
         {% if not scanned %}
         <h1 class="mb-3">Enter Network to Scan</h1>
-        <form action="" method="post" class="mb-3">
+        <button onclick="window.location.href='{{ url_for('main.index') }}'" class="btn btn-secondary">Home</button>
+        <form action="" method="post" class="mb-3" onsubmit="return validateNetworkAddress(event);">
             <div class="mb-3">
                 <input type="text" name="subnet" class="form-control" placeholder="192.168.0.0/24">
             </div>

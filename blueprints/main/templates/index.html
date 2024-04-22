@@ -72,10 +72,10 @@
 </head>
 <body>
     <div class="header">Purple Team Testing Toolkit</div>
-    <a href="{{ url_for('auth.logout') }}">Logout</a>
+    <button onclick="window.location.href='{{ url_for('auth.logout') }}'" class="btn btn-secondary">logout</button>
     <div class="button-container">
         <!-- Red Buttons -->
-        <button class="red" onclick="window.location.href='{{ url_for('mdns.mDNS_page') }}'">mDNS Search</button>
+        <button class="red" onclick="window.location.href='{{ url_for('mdns.mdns_discovery') }}'">mDNS Search</button>
         <button class="red" onclick="window.location.href='{{ url_for('arp.arp_scan_view') }}'">ARP-Vendor</button>
         <button class="red" onclick="window.location.href='{{ url_for('ssdp.ssdp_spoofer') }}'">Evil SSDP Spoofer</button>
         <button class="red" onclick="window.location.href='{{ url_for('upnp_bp.discover') }}'">UPnP Scan</button>

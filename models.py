@@ -1,7 +1,7 @@
 from flask_sqlalchemy import SQLAlchemy
 from extensions import db
 from flask_login import UserMixin
-from extensions import db
+
 
 
 
@@ -17,8 +17,8 @@ class Device(db.Model):
     password = db.Column(db.String(255), nullable=False)
     device_info = db.relationship('DeviceInfo', backref='device', uselist=False, lazy=True)
 
-    #def __repr__(self):
-        #return f'<Device {self.ip_address}>'
+    def __repr__(self):
+        return f'<Device {self.ip_address}>'
     
 class DeviceInfo(db.Model):
     __tablename__ = 'devices_information'
