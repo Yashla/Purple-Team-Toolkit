@@ -1,7 +1,7 @@
 # routes.py
 from flask import render_template, request, Blueprint
 from . import arp
-from .utils import perform_arp_scan
+from .Arp_scanner import perform_arp_scan
 
 @arp.route('/arp_scan', methods=['GET', 'POST'])
 def arp_scan_view():

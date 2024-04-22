@@ -2,14 +2,9 @@ from . import mdns
 from flask import render_template, request
 from .discover_mdnss import discover_services 
 
-
-
-
 @mdns.route('/mdns_discovery', methods=['GET'])
 def mDNS_page():
     return render_template('mdns_discovery.html')
-
-    
 
 @mdns.route('/mdns_discovery/results', methods=['GET', 'POST'])
 def mdns_discovery():

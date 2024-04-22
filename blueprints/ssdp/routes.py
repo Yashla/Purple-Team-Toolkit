@@ -9,6 +9,8 @@ import psutil
 from extensions import db
 import threading
 
+
+
 process = None
 output_file_path_global = None
 
@@ -30,7 +32,7 @@ def start_ssdp():
         
         # Start the subprocess with the modified environment
         process = subprocess.Popen(
-            ['python3', '/home/yash/Documents/GitHub/FYP-SCAN-DEVICES-ON-NETWORK-Final/blueprints/ssdp/essdp/evil/evil_ssdp.py', 'ens37', '--template', 'scanner'],
+            ['python3', '/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/ssdp/essdp/evil/evil_ssdp.py', 'ens37', '--template', 'scanner'],
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
             text=True,

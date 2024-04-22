@@ -17,7 +17,6 @@ class MyListener(ServiceListener):
             }
             self.services.append(service_info)
 
-# Make sure this function is at the module level and not within a class
 def discover_services(service_types, duration=10):
     discovered_services = []
     zeroconf = Zeroconf()

@@ -1,5 +1,9 @@
 from flask_sqlalchemy import SQLAlchemy
 from extensions import db
+from flask_login import UserMixin
+from extensions import db
+
+
 
 device_info = db.relationship('DeviceInfo', backref='device', uselist=False)
 
@@ -13,8 +17,8 @@ class Device(db.Model):
     password = db.Column(db.String(255), nullable=False)
     device_info = db.relationship('DeviceInfo', backref='device', uselist=False, lazy=True)
 
-    def __repr__(self):
-        return f'<Device {self.ip_address}>'
+    #def __repr__(self):
+        #return f'<Device {self.ip_address}>'
     
 class DeviceInfo(db.Model):
     __tablename__ = 'devices_information'
@@ -48,15 +52,18 @@ class DeviceCVE(db.Model):
 class SSDPOutput(db.Model):
     __tablename__ = 'ssdp_outputs'
     id = db.Column(db.Integer, primary_key=True)
-    file_name = db.Column(db.String(255), nullable=False)  # Column to store the file name
-    output_blob = db.Column(db.LargeBinary, nullable=False)  # Column to store the file content as a BLOB
+    file_name = db.Column(db.String(255), nullable=False)  
+    output_blob = db.Column(db.LargeBinary, nullable=False)  
     
 class SNMP_Output(db.Model):
     __tablename__ = 'snmp_outputs'
     
     id = db.Column(db.Integer, primary_key=True)
     filename = db.Column(db.String(255), nullable=False)
-    data = db.Column(db.LargeBinary, nullable=False)  # Storing the file content as a binary large object
+    data = db.Column(db.LargeBinary, nullable=False)  
 
-   ## def __repr__(self):
-    ##    return f'<SNMP_Output {self.filename}>'
+
+class User(db.Model, UserMixin):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(100), unique=True, nullable=False)
+    password = db.Column(db.String(100), nullable=False)

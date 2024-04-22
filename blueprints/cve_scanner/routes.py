@@ -1,6 +1,6 @@
 from . import cve_scanner
 from flask import render_template, request, redirect, url_for, flash
-from models import Device, DeviceCVE, DeviceInfo # Assuming models is at the root
+from models import Device, DeviceCVE, DeviceInfo 
 from blueprints.cve_scanner.network_scanner import NetworkScanner
 import subprocess
 from extensions import db
@@ -60,11 +60,17 @@ def reset_db():
     db.create_all()
     # Redirect to the index page after resetting the database
     return redirect(url_for('main.index'))
-
 @cve_scanner.route('/add_device', methods=['POST'])
 def add_device():
     ips = request.form.getlist('ip[]')
     for ip in ips:
+        # Check if device with this IP already exists
+        existing_device = Device.query.filter_by(ip_address=ip).first()
+        if existing_device:
+            # Optionally update existing device or continue to the next IP
+            flash(f'Device with IP {ip} already exists. Skipping...')
+            continue
+
         device_type = request.form.get('type[{}]'.format(ip))
         username = request.form.get('username[{}]'.format(ip))
         password = request.form.get('password[{}]'.format(ip))
@@ -77,7 +83,6 @@ def add_device():
             vendor, product, version = NetworkScanner.get_linux_os_info(new_device)
         elif device_type.lower() == 'windows':
             vendor, product, version = NetworkScanner.get_windows_os_info(new_device)
-            
         elif device_type.lower() == 'mac':
             vendor, product, version = NetworkScanner.get_mac_os_info(new_device)
         else:

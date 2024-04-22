@@ -27,7 +27,7 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            margin-bottom: 20px; /* Adjusted margin to push the rest of the content down */
+            margin-bottom: 20px; 
         }
         button {
             width: 200px;
@@ -62,10 +62,11 @@
         }
         .footer {
             position: fixed;
-            bottom: 10px;
-            right: 10px;
+            bottom: 0;
+            right: 0;
             color: #666;
             font-size: 12px;
+            padding: 10px; /* Adds padding to avoid sticking to the corner */
         }
     </style>
 </head>
@@ -77,9 +78,7 @@
         <button class="red" onclick="window.location.href='{{ url_for('arp.arp_scan_view') }}'">ARP-Vendor</button>
         <button class="red" onclick="window.location.href='{{ url_for('ssdp.ssdp_spoofer') }}'">Evil SSDP Spoofer</button>
         <button class="red" onclick="window.location.href='{{ url_for('upnp_bp.discover') }}'">UPnP Scan</button>
-
         <button class="red" onclick="window.location.href='{{ url_for('snmp.snmp_operations') }}'">SNMP Operations</button>
-
         <!-- Blue Buttons -->
         <button class="blue" onclick="window.location.href='{{ url_for('cve_scanner.scan_network') }}'">Scan Now</button>
         <button class="blue" onclick="window.location.href='{{ url_for('cve_scanner.show_devices') }}'">Show Devices</button>

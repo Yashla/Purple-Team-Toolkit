@@ -237,7 +237,7 @@ class NetworkScanner:
 # scanner.scan_network('192.168.1.0/24')
 # scanner.scan_mdns()
 # scanner.refine_linux_array()
-# Now, you can use scanner.windows_array, scanner.linux_array, and scanner.macbook_array as needed
+
 
 
 if __name__ == "__main__":

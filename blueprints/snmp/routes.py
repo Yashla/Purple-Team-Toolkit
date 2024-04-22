@@ -5,6 +5,7 @@ import os
 from models import SNMP_Output
 from extensions import db
 
+
 @snmp.route('/operations')
 def snmp_operations():
     snmp_outputs = SNMP_Output.query.all()
