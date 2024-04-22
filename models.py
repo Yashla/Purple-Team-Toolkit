@@ -66,4 +66,7 @@ class SNMP_Output(db.Model):
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(100), unique=True, nullable=False)
-    password = db.Column(db.String(100), nullable=False)
+    password_hash = db.Column(db.String(512), nullable=False)  # This is the expected field
+
+    def __repr__(self):
+        return '<User {}>'.format(self.username)

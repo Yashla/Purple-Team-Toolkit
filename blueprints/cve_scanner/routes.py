@@ -4,23 +4,29 @@ from models import Device, DeviceCVE, DeviceInfo
 from blueprints.cve_scanner.network_scanner import NetworkScanner
 import subprocess
 from extensions import db
+from flask_login import login_required
+
 
 @cve_scanner.route('/devices')
+@login_required
 def show_devices():
     devices = Device.query.all()
     return render_template('cve_scanner/devices.html', devices=devices)
 
 @cve_scanner.route('/device_cves/<int:device_id>')
+@login_required
 def show_device_cves(device_id):
     device = Device.query.get_or_404(device_id)
     device_cves = DeviceCVE.query.filter_by(device_id=device_id).all()
     return render_template('cve_scanner/device_cves.html', device=device, device_cves=device_cves)
 
 @cve_scanner.route('/test_details')
+@login_required
 def test_details():
     return render_template('cve_scanner/test_details.html')
 
 @cve_scanner.route('/test_windows', methods=['POST'])
+@login_required
 def test_windows():
     ip = request.form['windows_ip']
     username = request.form['windows_username']
@@ -30,6 +36,7 @@ def test_windows():
     return redirect(url_for('cve_scanner.test_details'))
 
 @cve_scanner.route('/test_ssh', methods=['POST'])
+@login_required
 def test_ssh():
     ip = request.form['ssh_ip']
     username = request.form['ssh_username']
@@ -40,6 +47,7 @@ def test_ssh():
 
 
 @cve_scanner.route('/scan', methods=['GET', 'POST'])
+@login_required
 def scan_network():
     ip_command_output = subprocess.run(['ip', 'a'], stdout=subprocess.PIPE, text=True).stdout
     
@@ -54,13 +62,16 @@ def scan_network():
 
 
 @cve_scanner.route('/reset_db')
+@login_required
 def reset_db():
     # Caution: This will drop all data and recreate the tables!
     db.drop_all()
     db.create_all()
     # Redirect to the index page after resetting the database
     return redirect(url_for('main.index'))
+
 @cve_scanner.route('/add_device', methods=['POST'])
+@login_required
 def add_device():
     ips = request.form.getlist('ip[]')
     for ip in ips:

@@ -4,14 +4,17 @@ from .snmpwalker import snmp_walk, snmp_set
 import os
 from models import SNMP_Output
 from extensions import db
+from flask_login import current_user, login_required
 
 
 @snmp.route('/operations')
+@login_required
 def snmp_operations():
     snmp_outputs = SNMP_Output.query.all()
     return render_template('snmp_operations.html', snmp_outputs=snmp_outputs)
 
 @snmp.route('/set', methods=['POST'])
+@login_required
 def set_oid():
     if request.method == 'POST':
         # Collect form data
@@ -31,6 +34,7 @@ def set_oid():
     return render_template('snmp_operations.html')
 
 @snmp.route('/walk', methods=['GET', 'POST'])
+@login_required
 def walk_oid():
     if request.method == 'POST':
         ip_address = request.form['ip_address']
@@ -61,12 +65,14 @@ def walk_oid():
     return render_template('snmp_operations.html')
 
 @snmp.route('/download_snmp_output/<int:snmp_output_id>')
+@login_required
 def download_snmp_output(snmp_output_id):
     snmp_output = SNMP_Output.query.get_or_404(snmp_output_id)
     response = Response(snmp_output.data, mimetype="text/plain", headers={"Content-Disposition": f"attachment;filename={snmp_output.filename}"})
     return response
 
 @snmp.route('/delete_snmp_output/<int:snmp_output_id>', methods=['POST'])
+@login_required
 def delete_snmp_output(snmp_output_id):
     snmp_output = SNMP_Output.query.get_or_404(snmp_output_id)
     db.session.delete(snmp_output)
