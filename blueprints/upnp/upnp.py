@@ -1,4 +1,3 @@
-
 import re
 import socket
 import json
@@ -7,8 +6,8 @@ from urllib.parse import urlparse
 import xml.etree.ElementTree as ET
 import base64
 import struct
-import sys
 
+#converted code into json
 
 def discover_pnp_locations_json():
     locations = []

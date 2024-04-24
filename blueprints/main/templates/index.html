@@ -66,13 +66,12 @@
             right: 0;
             color: #666;
             font-size: 12px;
-            padding: 10px; /* Adds padding to avoid sticking to the corner */
+            padding: 10px; 
         }
     </style>
 </head>
 <body>
     <div class="header">Purple Team Testing Toolkit</div>
-    <!-- Changed btn-secondary to btn-danger for the logout button -->
     <button onclick="window.location.href='{{ url_for('auth.logout') }}'" class="btn btn-danger">Logout</button>
     <div class="button-container">
         <!-- Red Buttons -->

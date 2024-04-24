@@ -8,13 +8,12 @@ import os
 import psutil
 from extensions import db
 import threading
-from flask_login import current_user, login_required
+from flask_login import login_required
 
 
 process = None
 output_file_path_global = None
 
-# Import any other necessary modules
 
 @ssdp.route('/ssdp_spoofer')
 @login_required
@@ -27,12 +26,11 @@ def start_ssdp():
     global process, output_file_path_global
     # Check if the process is not already running
     if process is None or process.poll() is not None:
-        # Set the environment variable for the subprocess to disable output buffering
         env = os.environ.copy()
         env['PYTHONUNBUFFERED'] = "1"
         
         # Start the subprocess with the modified environment
-        process = subprocess.Popen(
+        process = subprocess.Popen(# Make sure to change this path in your code below 
             ['python3', '/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/ssdp/essdp/evil/evil_ssdp.py', 'ens37', '--template', 'scanner'],
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
@@ -65,7 +63,7 @@ def stop_ssdp():
         process = None
 
         try:
-            with open(output_file_path_global, "a") as file:  # Open in append mode
+            with open(output_file_path_global, "a") as file: 
                 timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 file.write(f"\n\nFile has been saved on {timestamp}")
         except IOError as e:
@@ -81,7 +79,6 @@ def stop_ssdp():
                 db.session.commit()
         except IOError as e:
             print(f"Error reading the SSDP output file: {e}")
-            # Optionally, handle the error
             
         try:
             os.remove(output_file_path_global)
@@ -94,12 +91,12 @@ def stop_ssdp():
 def collect_output(output_file_path):
     global process
     if process is None:
-        return  # Exit early if the process hasn't been started
+        return 
 
-    # Determine if the file already exists to avoid overwriting the initial timestamp
+    # Determine if the file already exists to avoid overwriting the initial
     file_exists = os.path.exists(output_file_path)
 
-    with open(output_file_path, "a") as output_file:  # Open in append mode
+    with open(output_file_path, "a") as output_file:
         # If the file does not exist, it's the first write operation, so add the timestamp
         if not file_exists:
             start_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -107,7 +104,7 @@ def collect_output(output_file_path):
 
         while True:
             if process is None or process.poll() is not None:
-                break  # Exit the loop if the process is terminated or completes
+                break 
             line = process.stdout.readline()
             if not line:
                 break  # If there's no more output, exit the loop

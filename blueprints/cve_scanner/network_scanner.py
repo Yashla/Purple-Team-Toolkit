@@ -4,23 +4,14 @@ from concurrent.futures import ThreadPoolExecutor
 from zeroconf import Zeroconf, ServiceBrowser, ServiceListener
 import time
 import  winrm
-from winrm.exceptions import WinRMTransportError
-from flask_sqlalchemy import SQLAlchemy
 import paramiko
-from paramiko.ssh_exception import AuthenticationException, SSHException
-from models import DeviceInfo
 from extensions import db
-
 import requests
 from bs4 import BeautifulSoup
 import math
 from time import sleep
-
 from extensions import db
 from models import CVE , DeviceCVE
-from datetime import datetime
-import upnpclient
-
 
 
 # Define a class to hold the discovered IP addresses
@@ -118,7 +109,7 @@ class NetworkScanner:
             ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
             ssh_client.connect(hostname=device.ip_address, username=device.username, password=device.password)
             
-            # Command to check if the OS is Ubuntu
+            # Command to check if the os is Ubuntu
             check_ubuntu_cmd = "if grep -q '^NAME=\"Ubuntu\"' /etc/os-release; then echo 'ubuntu_linux'; fi"
             stdin, stdout, stderr = ssh_client.exec_command(check_ubuntu_cmd)
             Product = stdout.read().decode().strip().lower()
@@ -141,8 +132,7 @@ class NetworkScanner:
             ssh_client = paramiko.SSHClient()
             ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
             ssh_client.connect(hostname=device.ip_address, username=device.username, password=device.password)
-            
-            # Separate commands for ProductName and ProductVersion
+
             product_name_command = "sw_vers | awk '/ProductName/{print $2}'"
             stdin, stdout, stderr = ssh_client.exec_command(product_name_command)
             Product = stdout.read().decode().strip().lower() if not stderr.read().decode().strip() else "Error fetching ProductName"
@@ -190,17 +180,17 @@ class NetworkScanner:
                         cvss_v3_label=cvss_v3_label
                     )
                     db.session.add(new_cve)
-                    db.session.flush()  # Flush to ensure new_cve gets an ID if it's new
+                    db.session.flush()  
 
-                # Create or update a DeviceCVE instance linking the CVE to the device
+              
                 existing_device_cve = DeviceCVE.query.filter_by(device_id=device_id, cve_id=cve_id).first()
                 if not existing_device_cve:
                     new_device_cve = DeviceCVE(device_id=device_id, cve_id=cve_id)
                     db.session.add(new_device_cve)
 
-                sleep(3)  # Be respectful to the server
+                sleep(3) 
         
-        db.session.commit()  # Commit once at the end for efficiency
+        db.session.commit()  
 
 
     def test_ssh_connection(ip, username, password):
@@ -231,18 +221,9 @@ class NetworkScanner:
             return False, f"WinRM connection failed: {e}"
 
 
-
-# Example usage within Flask
-# scanner = NetworkScanner()
-# scanner.scan_network('192.168.1.0/24')
-# scanner.scan_mdns()
-# scanner.refine_linux_array()
-
-
-
 if __name__ == "__main__":
     subnet_to_scan = (
-        "192.168.0.0/24"  # Example subnet, change this to the subnet you wish to scan
+        "192.168.0.0/24"  
     )
     scanner = NetworkScanner()
     print("Scanning network...")

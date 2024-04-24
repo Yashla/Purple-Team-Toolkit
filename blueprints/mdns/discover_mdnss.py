@@ -23,7 +23,7 @@ def discover_services(service_types, duration=10):
     listener = MyListener(discovered_services)
     browsers = [ServiceBrowser(zeroconf, st, listener) for st in service_types]
 
-    # Run the discovery for a specified duration
+
     time.sleep(duration)
     zeroconf.close()
     return discovered_services

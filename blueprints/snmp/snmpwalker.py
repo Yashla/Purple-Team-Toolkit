@@ -1,5 +1,4 @@
 from pysnmp.hlapi import nextCmd, setCmd, SnmpEngine, CommunityData, UdpTransportTarget, ContextData, ObjectType, ObjectIdentity
-import os
 from datetime import datetime 
 
 def snmp_walk(ip_address, community, oids):
@@ -8,7 +7,7 @@ def snmp_walk(ip_address, community, oids):
         "community_string": community,
         "oids": {}
     }
-    success = True  # Maintain overall success status
+    success = True  
     last_file_path = None
 
     now = datetime.now()
@@ -17,7 +16,7 @@ def snmp_walk(ip_address, community, oids):
     for oid in oids:
         sanitized_oid = oid.replace('.', '_')
         filename = f"{ip_address.replace('.', '_')}_Walker_{sanitized_oid}_{timestamp}.txt"
-        filepath = filename  # Adjust path as needed
+        filepath = filename  # Adjust path
         last_file_path = filepath  # Update last file path
 
         try:
@@ -35,12 +34,12 @@ def snmp_walk(ip_address, community, oids):
                     if errorIndication:
                         file.write(f"{oid} Error: {str(errorIndication)}\n")
                         oid_results["oids"][oid] = f"Error: {str(errorIndication)}"
-                        continue  # Skip to next iteration, not breaking the loop
+                        continue  
                     elif errorStatus:
                         error_message = f"{oid} Error: {errorStatus.prettyPrint()} at {errorIndex and varBinds[int(errorIndex) - 1][0] or '?'}"
                         file.write(error_message + "\n")
                         oid_results["oids"][oid] = f"Error: {error_message}"
-                        continue  # Skip to next iteration, not breaking the loop
+                        continue  
                     else:
                         for varBind in varBinds:
                             result = f"{'.'.join([str(x) for x in varBind[0]])} = {varBind[1].prettyPrint()}"
@@ -56,19 +55,7 @@ def snmp_walk(ip_address, community, oids):
     return {'file_path': last_file_path, 'success': success}
 
 def snmp_set(ip_address, community, oid, value_type, value):
-    """
-    Set an SNMP OID to a specified value on a target device.
 
-    Args:
-    ip_address (str): The IP address of the SNMP agent (device).
-    community (str): The community string for SNMP authentication.
-    oid (str): The OID that needs to be set.
-    value_type (str): The type of the value ('int' or 'str').
-    value: The value to set the OID to.
-
-    Returns:
-    str: Result message indicating success or failure.
-    """
     # Convert the value based on the specified value_type
     if value_type == 'int':
         try:
@@ -76,11 +63,11 @@ def snmp_set(ip_address, community, oid, value_type, value):
         except ValueError:
             return "Error: Value type 'int' specified, but the provided value could not be converted to an integer."
     elif value_type == 'str':
-        value = str(value)  # Ensure the value is treated as a string if 'str' is specified
+        value = str(value)  
     else:
         return f"Unsupported value type '{value_type}'. Supported types are 'int' and 'str'."
 
-    # Prepare the SNMP set command
+
     errorIndication, errorStatus, errorIndex, varBinds = next(
         setCmd(
             SnmpEngine(),
@@ -108,7 +95,6 @@ if __name__ == "__main__":
         value_type = input("Enter the type of the value (e.g., 'int', 'str'): ")
         value = input("Enter the value you want to set: ")
 
-        # Ensure value_type is passed as a string
         if value_type not in ['int', 'str']:
             print("Unsupported value type. Supported types are 'int' and 'str'.")
         else:

@@ -33,7 +33,6 @@
             });
         }
 
-        // New function to autofill MacBook credentials
         function autofillMacCredentials() {
             var username = document.getElementById('globalMacUsername').value;
             var password = document.getElementById('globalMacPassword').value;
@@ -49,7 +48,6 @@
         }
 
         function validateDeviceDetails() {
-            // Find all device input fields for usernames and passwords
             var allUsernames = document.querySelectorAll('input[name^="username"]');
             var allPasswords = document.querySelectorAll('input[name^="password"]');
 
@@ -57,10 +55,10 @@
             for (var i = 0; i < allUsernames.length; i++) {
                 if (allUsernames[i].value.trim() === '' || allPasswords[i].value.trim() === '') {
                     alert("Please fill in all details for all devices.");
-                    return false; // Prevent the form submission
+                    return false; 
                 }
             }
-            return true; // Allow the form submission if all fields are filled
+            return true; 
         }
 
         // Function to validate the network address format
@@ -79,11 +77,9 @@
 
 
         function clearAllFields() {
-            // Target all text and password inputs within the form
             document.querySelectorAll('form input[type="text"], form input[type="password"]').forEach(function (inputField) {
-                inputField.value = ''; // Clear each field
+                inputField.value = ''; 
             });
-            // Clear global autofill fields for Windows, Linux, and MacBook
             document.getElementById('globalWindowsUsername').value = '';
             document.getElementById('globalWindowsPassword').value = '';
             document.getElementById('globalLinuxUsername').value = '';

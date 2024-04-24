@@ -13,9 +13,9 @@
 
             if (!allValid) {
                 alert('Each service type must end with ".local.". Please correct your input.');
-                return false; // Prevent form submission if validation fails
+                return false; 
             }
-            return true; // Allow form submission if all service types are valid
+            return true; 
         }
     </script>
 </head>
@@ -27,7 +27,7 @@
                 <form action="{{ url_for('mdns.mdns_discovery') }}" method="post" onsubmit="return validateServiceTypes()" class="mb-3">
                     <div class="mb-3">
                         <label for="service_types" class="form-label">Enter Service Types (comma-separated):</label>
-                        <input type="text" name="service_types" id="service_types" class="form-control" placeholder="_http._tcp.local, _ftp._tcp.local" required>
+                        <input type="text" name="service_types" id="service_types" class="form-control" placeholder="_http._tcp.local," required>
                     </div>
                     <button type="submit" class="btn btn-danger">Discover Services</button>
                 </form>

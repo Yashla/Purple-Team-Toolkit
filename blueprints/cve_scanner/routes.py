@@ -4,7 +4,6 @@ from blueprints.cve_scanner.network_scanner import NetworkScanner
 import subprocess
 from extensions import db
 from flask_login import login_required
-from werkzeug.security import generate_password_hash
 from models import Device, DeviceInfo, CVE, DeviceCVE, SSDPOutput, SNMP_Output
 
 
@@ -75,24 +74,11 @@ def reset_db():
         db.session.commit()
         flash('Database data cleared successfully, except for Users.', 'success')
     except Exception as e:
-        # If an error occurs, rollback the changes
         db.session.rollback()
         flash(f'Error clearing database data: {str(e)}', 'danger')
 
     return redirect(url_for('main.index'))
 
-
-
-
-
-#@cve_scanner.route('/reset_db')
-#@login_required
-#def reset_db():
-#    # Caution: This will drop all data and recreate the tables!
-#    db.drop_all()
-#    db.create_all()
-#    # Redirect to the index page after resetting the database
-#    return redirect(url_for('main.index'))
 
 @cve_scanner.route('/add_device', methods=['POST'])
 @login_required
@@ -102,7 +88,6 @@ def add_device():
         # Check if device with this IP already exists
         existing_device = Device.query.filter_by(ip_address=ip).first()
         if existing_device:
-            # Optionally update existing device or continue to the next IP
             flash(f'Device with IP {ip} already exists. Skipping...')
             continue
 

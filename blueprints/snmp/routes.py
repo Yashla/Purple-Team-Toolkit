@@ -1,10 +1,10 @@
-from flask import render_template, request, redirect, url_for, send_from_directory, current_app, Response, flash
+from flask import render_template, request, redirect, url_for, Response, flash
 from . import snmp
 from .snmpwalker import snmp_walk, snmp_set
 import os
 from models import SNMP_Output
 from extensions import db
-from flask_login import current_user, login_required
+from flask_login import login_required
 
 
 @snmp.route('/operations')
@@ -27,8 +27,7 @@ def set_oid():
         # Execute SNMP set operation
         result_message = snmp_set(ip_address, community_string, oid, value_type, value)
         
-        # Return directly with the result message, avoiding redirect
-        snmp_outputs = SNMP_Output.query.all()  # If you need to display other data as well
+        snmp_outputs = SNMP_Output.query.all()  
         return render_template('snmp_operations.html', result_message=result_message, snmp_outputs=snmp_outputs)
 
     return render_template('snmp_operations.html')
