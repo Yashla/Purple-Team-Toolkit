@@ -1,0 +1,11 @@
+# Ignore all __pycache__ directories
+__pycache__/
+
+# Ignore all files with a .pyc extension
+*.pyc
+
+# Ignore all log files
+*.log
+
+# Ignore node_modules directories often used in web development
+node_modules/
