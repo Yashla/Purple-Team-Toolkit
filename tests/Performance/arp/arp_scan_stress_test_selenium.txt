@@ -1,0 +1,846 @@
+wn'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:10:43] "POST /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:44] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:44] "GET / HTTP/1.1" 200 -
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'ARRIS Group, Inc.'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Micro-Star INTL CO., LTD.'}]
+192.168.0.132 - - [27/Apr/2024 20:10:44] "POST /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:44] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:10:44] "GET /login HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:44] "GET /auth/login HTTP/1.1" 200 -
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:10:44] "POST /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:44] "GET /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:10:44] "GET /login HTTP/1.1" 302 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:10:44] "GET /login HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:44] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:44] "GET /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:44] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:44] "GET /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:10:44] "GET /login HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:44] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:44] "GET /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:44] "GET /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:10:44] "GET /login HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:45] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:45] "GET /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:10:45] "GET /login HTTP/1.1" 302 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:10:45] "GET /login HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:45] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:45] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:45] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:10:45] "GET /login HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:45] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:10:45] "GET /login HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:45] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:45] "GET / HTTP/1.1" 200 -
+[{'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'ARRIS Group, Inc.'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:10:45] "POST /arp/arp_scan HTTP/1.1" 200 -
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'ARRIS Group, Inc.'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Apple, Inc.'}]
+192.168.0.132 - - [27/Apr/2024 20:10:46] "POST /arp/arp_scan HTTP/1.1" 200 -
+[{'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'ARRIS Group, Inc.'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'CLOUD NETWORK TECHNOLOGY SINGAPORE PTE. LTD.'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:10:46] "POST /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:46] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:46] "GET / HTTP/1.1" 200 -
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:47] "GET /arp/arp_scan HTTP/1.1" 200 -
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'ARRIS Group, Inc.'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Micro-Star INTL CO., LTD.'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.181', 'mac': '56:b3:53:f2:c5:cb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:10:47] "POST /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:47] "GET / HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:47] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:47] "GET / HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+[{'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:10:47] "POST /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:47] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:10:47] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:47] "GET / HTTP/1.1" 200 -
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: main.index
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:47] "GET /arp/arp_scan HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:10:47] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:47] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:47] "GET /arp/arp_scan HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:10:47] "POST /auth/login HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:10:47] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:47] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:47] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:10:47] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:47] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:47] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:47] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:47] "GET /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:48] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:10:48] "POST /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+Requested endpoint: arp.arp_scan_view
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}]
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:48] "POST /arp/arp_scan HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:10:48] "GET /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: arp.arp_scan_view
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:10:48] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:48] "GET /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:49] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:49] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:49] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:49] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:49] "POST /auth/login HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:10:49] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Requested endpoint: None
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:49] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:10:49] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:49] "POST /auth/login HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:10:49] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:49] "GET / HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:50] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:10:50] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: None
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Is user authenticated True
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:10:50] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:50] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:10:50] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:50] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:10:50] "POST /auth/login HTTP/1.1" 302 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:50] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:50] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: main.index
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:50] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:10:50] "POST /auth/login HTTP/1.1" 302 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:50] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: main.index
+Is user authenticated True
+Requested endpoint: None
+192.168.0.132 - - [27/Apr/2024 20:10:50] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+Requested endpoint: None
+192.168.0.132 - - [27/Apr/2024 20:10:50] "GET /favicon.ico HTTP/1.1" 404 -
+Is user authenticated True
+Requested endpoint: None
+192.168.0.132 - - [27/Apr/2024 20:10:50] "GET /favicon.ico HTTP/1.1" 404 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:10:50] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: main.index
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: main.index
+Requested endpoint: main.index
+Requested endpoint: main.index
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: main.index
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:10:51] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:51] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:10:52] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:52] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:10:52] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:52] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:10:52] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:52] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:10:52] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:52] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: main.index
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:10:52] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:10:52] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: main.index
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:10:52] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:52] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:52] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:10:52] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:10:52] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:52] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: main.index
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:53] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:10:53] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:53] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:10:53] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: main.index
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: main.index
+Requested endpoint: main.index
+Requested endpoint: main.index
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: main.index
+Requested endpoint: main.index
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:10:58] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'ARRIS Group, Inc.'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:10:59] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'ARRIS Group, Inc.'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Micro-Star INTL CO., LTD.'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:10:59] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'ARRIS Group, Inc.'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'CLOUD NETWORK TECHNOLOGY SINGAPORE PTE. LTD.'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:00] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:00] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+Requested endpoint: arp.arp_scan_view
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.181', 'mac': '56:b3:53:f2:c5:cb', 'vendor': 'Unknown'}, {'ip': '192.168.0.175', 'mac': '32:99:85:3a:53:6a', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:01] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:01] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:01] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:01] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'ARRIS Group, Inc.'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.175', 'mac': '32:99:85:3a:53:6a', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:01] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.175', 'mac': '32:99:85:3a:53:6a', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:01] "POST /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:01] "GET /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+Requested endpoint: arp.arp_scan_view
+[{'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.181', 'mac': '56:b3:53:f2:c5:cb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:01] "POST /arp/arp_scan HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:11:01] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+Requested endpoint: arp.arp_scan_view
+[{'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'ARRIS Group, Inc.'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:01] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+[{'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.175', 'mac': '32:99:85:3a:53:6a', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:01] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:01] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:01] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:01] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:01] "GET / HTTP/1.1" 200 -
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.175', 'mac': '32:99:85:3a:53:6a', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:01] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:01] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:01] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:01] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:11:02] "POST /auth/login HTTP/1.1" 302 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:11:02] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:11:02] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:11:02] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:11:02] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+192.168.0.132 - - [27/Apr/2024 20:11:02] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:11:02] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:11:02] "POST /auth/login HTTP/1.1" 302 -
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.181', 'mac': '56:b3:53:f2:c5:cb', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Apple, Inc.'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.175', 'mac': '32:99:85:3a:53:6a', 'vendor': 'Unknown'}]
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:11:02] "POST /arp/arp_scan HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:11:02] "POST /auth/login HTTP/1.1" 302 -
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET /arp/arp_scan HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:11:02] "POST /auth/login HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET /arp/arp_scan HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET /arp/arp_scan HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET /arp/arp_scan HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+[{'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.181', 'mac': '56:b3:53:f2:c5:cb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:02] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+Is user authenticated True
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:11:02] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:03] "GET /favicon.ico HTTP/1.1" 404 -
+[{'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'ARRIS Group, Inc.'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.175', 'mac': '32:99:85:3a:53:6a', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:03] "POST /arp/arp_scan HTTP/1.1" 200 -
+[{'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.181', 'mac': '56:b3:53:f2:c5:cb', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.175', 'mac': '32:99:85:3a:53:6a', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:03] "POST /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:03] "GET /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:03] "GET /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:05] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:05] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Requested endpoint: None
+Is user authenticated True
+Is user authenticated True
+Requested endpoint: None
+192.168.0.132 - - [27/Apr/2024 20:11:05] "GET /favicon.ico HTTP/1.1" 404 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:05] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:11:05] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:05] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Requested endpoint: None
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:05] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:11:05] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:05] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:06] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:06] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:06] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:11:06] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:06] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:06] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:06] "GET / HTTP/1.1" 200 -
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:06] "GET /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:06] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:06] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:06] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:06] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:07] "GET /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:07] "GET / HTTP/1.1" 200 -
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:07] "GET /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:07] "GET /arp/arp_scan HTTP/1.1" 200 -
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+Is user authenticated True
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Is user authenticated True
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+[{'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Wistron Neweb Corporation'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.181', 'mac': '56:b3:53:f2:c5:cb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:11] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+Requested endpoint: arp.arp_scan_view
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Micro-Star INTL CO., LTD.'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.181', 'mac': '56:b3:53:f2:c5:cb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:11] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:11] "GET /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'ARRIS Group, Inc.'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.181', 'mac': '56:b3:53:f2:c5:cb', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:12] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.181', 'mac': '56:b3:53:f2:c5:cb', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Amazon Technologies Inc.'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:12] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:12] "GET /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:12] "GET /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.181', 'mac': '56:b3:53:f2:c5:cb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:12] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:12] "GET /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:12] "GET /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:12] "GET /arp/arp_scan HTTP/1.1" 200 -
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Micro-Star INTL CO., LTD.'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.181', 'mac': '56:b3:53:f2:c5:cb', 'vendor': 'Unknown'}]
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:12] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+[{'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:13] "POST /arp/arp_scan HTTP/1.1" 200 -
+[{'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}]
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:11:13] "GET /arp/arp_scan HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:11:13] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+Is user authenticated True
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Micro-Star INTL CO., LTD.'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Amazon Technologies Inc.'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Wistron Neweb Corporation'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.181', 'mac': '56:b3:53:f2:c5:cb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:14] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+Requested endpoint: arp.arp_scan_view
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:14] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:14] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:14] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:15] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+Requested endpoint: arp.arp_scan_view
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Amazon Technologies Inc.'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:17] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+Requested endpoint: arp.arp_scan_view
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Micro-Star INTL CO., LTD.'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Amazon Technologies Inc.'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Apple, Inc.'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:18] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+[{'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Amazon Technologies Inc.'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:21] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+[{'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Wistron Neweb Corporation'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:22] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Apple, Inc.'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:24] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+[{'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:24] "POST /arp/arp_scan HTTP/1.1" 200 -
+Is user authenticated True
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Amazon Technologies Inc.'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:24] "POST /arp/arp_scan HTTP/1.1" 200 -
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'ARRIS Group, Inc.'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.181', 'mac': '56:b3:53:f2:c5:cb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:24] "POST /arp/arp_scan HTTP/1.1" 200 -
+[{'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:27] "POST /arp/arp_scan HTTP/1.1" 200 -
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Apple, Inc.'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.181', 'mac': '56:b3:53:f2:c5:cb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:27] "POST /arp/arp_scan HTTP/1.1" 200 -
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.181', 'mac': '56:b3:53:f2:c5:cb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:28] "POST /arp/arp_scan HTTP/1.1" 200 -
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.181', 'mac': '56:b3:53:f2:c5:cb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:28] "POST /arp/arp_scan HTTP/1.1" 200 -
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'ARRIS Group, Inc.'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.181', 'mac': '56:b3:53:f2:c5:cb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:28] "POST /arp/arp_scan HTTP/1.1" 200 -
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Amazon Technologies Inc.'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.181', 'mac': '56:b3:53:f2:c5:cb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:29] "POST /arp/arp_scan HTTP/1.1" 200 -
+[{'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.181', 'mac': '56:b3:53:f2:c5:cb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:29] "POST /arp/arp_scan HTTP/1.1" 200 -
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Apple, Inc.'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.181', 'mac': '56:b3:53:f2:c5:cb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:29] "POST /arp/arp_scan HTTP/1.1" 200 -
+[{'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Wistron Neweb Corporation'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Apple, Inc.'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.181', 'mac': '56:b3:53:f2:c5:cb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:29] "POST /arp/arp_scan HTTP/1.1" 200 -
+[{'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Apple, Inc.'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:32] "POST /arp/arp_scan HTTP/1.1" 200 -
+[{'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Amazon Technologies Inc.'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.142', 'mac': 'd8:80:83:1a:dc:e5', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:32] "POST /arp/arp_scan HTTP/1.1" 200 -
+[{'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Amazon Technologies Inc.'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Unknown'}, {'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}]
+192.168.0.132 - - [27/Apr/2024 20:11:33] "POST /arp/arp_scan HTTP/1.1" 200 -
+[{'ip': '192.168.0.132', 'mac': 'cc:08:fa:73:2c:66', 'vendor': 'Unknown'}, {'ip': '192.168.0.170', 'mac': '9a:b7:b9:15:85:fb', 'vendor': 'Unknown'}, {'ip': '192.168.0.4', 'mac': '2c:f0:5d:09:97:5e', 'vendor': 'Unknown'}, {'ip': '192.168.0.50', 'mac': '74:ec:b2:23:44:b0', 'vendor': 'Unknown'}, {'ip': '192.168.0.71', 'mac': '64:ff:0a:d9:82:0a', 'vendor': 'Wistron Neweb Corporation'}, {'ip': '192.168.0.1', 'mac': '40:0d:10:69:77:a0', 'vendor': 'ARRIS Group, Inc.'}]
+192.168.0.132 - - [27/Apr/2024 20:11:34] "POST /arp/arp_scan HTTP/1.1" 200 -
+

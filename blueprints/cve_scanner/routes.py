@@ -99,17 +99,28 @@ def add_device():
         db.session.add(new_device)
         db.session.flush()
 
-        if device_type.lower() == 'linux':
-            vendor, product, version = NetworkScanner.get_linux_os_info(new_device)
+        if device_type.lower() == 'linux' or device_type.lower() == 'mac':
+            connection_successful, message = NetworkScanner.test_ssh_connection(ip, username, password)
+            if connection_successful:
+                if device_type.lower() == 'linux':
+                    vendor, product, version = NetworkScanner.get_linux_os_info(new_device)
+                else:
+                    vendor, product, version = NetworkScanner.get_mac_os_info(new_device)
+            else:
+                flash(message)
+                continue
         elif device_type.lower() == 'windows':
-            vendor, product, version = NetworkScanner.get_windows_os_info(new_device)
-        elif device_type.lower() == 'mac':
-            vendor, product, version = NetworkScanner.get_mac_os_info(new_device)
+            connection_successful, message = NetworkScanner.test_windows_connection(ip, username, password)
+            if connection_successful:
+                vendor, product, version = NetworkScanner.get_windows_os_info(new_device)
+            else:
+                flash(message)
+                continue
         else:
             vendor, product, version = 'Unsupported', 'Unsupported device type', 'N/A'
 
-        if product.startswith("Error") or version.startswith("Error"):
-            print(f"Failed to fetch OS information for device {ip} of type {device_type}: {product}, {version}")
+        if 'Error' in product or 'Error' in version:
+            flash(f"Failed to fetch OS information for device {ip} of type {device_type}: {product}, {version}")
 
         new_device_info = DeviceInfo(device_id=new_device.id, ip_address=ip, device_type=device_type, Vendor=vendor, Product=product, Version=version)
         db.session.add(new_device_info)

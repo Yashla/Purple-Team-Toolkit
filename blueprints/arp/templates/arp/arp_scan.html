@@ -19,16 +19,20 @@
 </head>
 <body>
     <div class="container mt-4">
-        <h1>ARP Network Scan</h1>
-        <form action="{{ url_for('arp.arp_scan_view') }}" method="post" class="mb-4" onsubmit="return validateNetworkInput()">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" id="network" name="network" placeholder="Enter network (e.g., 192.168.1.0/24)" aria-label="Network" required pattern="^([0-9]{1,3}\.){3}[0-9]{1,3}/([0-9]|[12][0-9]|3[0-2])$">
-                <button class="btn btn-danger" type="submit">ARP Scan</button>
+        <h1 class="text-center">ARP Network Scan</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6"> <!-- Adjust the column size as needed -->
+                <form action="{{ url_for('arp.arp_scan_view') }}" method="post" onsubmit="return validateNetworkInput()" class="mb-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="network" name="network" placeholder="Enter network (e.g., 192.168.1.0/24)" aria-label="Network" required pattern="^([0-9]{1,3}\.){3}[0-9]{1,3}/([0-9]|[12][0-9]|3[0-2])$">
+                        <button class="btn btn-danger" type="submit">ARP Scan</button>
+                    </div>
+                </form>
             </div>
-        </form>
+        </div>
 
         {% if scan_results %}
-        <h2>Scan Results:</h2>
+        <h2 class="text-center">Scan Results:</h2>
         <table class="table table-hover">
             <thead class="table-dark">
                 <tr>
@@ -48,7 +52,9 @@
             </tbody>
         </table>
         {% endif %}
-        <a href="{{ url_for('main.index') }}" class="btn btn-secondary mt-3">Home</a>
+        <div class="text-center">
+            <a href="{{ url_for('main.index') }}" class="btn btn-secondary mt-3">Home</a>
+        </div>
     </div>
 </body>
 </html>

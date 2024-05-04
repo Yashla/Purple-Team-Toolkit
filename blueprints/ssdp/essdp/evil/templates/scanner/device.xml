@@ -8,7 +8,7 @@
   <device>
     <presentationURL>http://$local_ip:$local_port/present.html</presentationURL>
     <deviceType>urn:schemas-upnp-org:device:Scanner:1</deviceType>
-    <friendlyName>1st Floor Printer [Yash Aston Test from pc ]</friendlyName>
+    <friendlyName>1st Floor Scanner [Yash Aston Vitor testing ]</friendlyName>
     <modelDescription>Confidential document scanner.</modelDescription>
     <manufacturer>Xerox</manufacturer>
     <modelName>ScanMaster5000</modelName>

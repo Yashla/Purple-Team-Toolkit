@@ -1,0 +1,1033 @@
+192.168.0.132 - - [27/Apr/2024 20:16:58] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:16:58] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:16:59] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:16:59] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:00] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:00] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:00] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:00] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:00] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:17:00] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:17:00] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:00] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:17:01] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:17:01] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:17:01] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:17:01] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:01] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:17:01] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:17:01] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:01] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:01] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:17:01] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:17:01] "GET /auth/login HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:01] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:01] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:01] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:02] "GET /snmp/operations HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:02] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:02] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:02] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:02] "GET /snmp/operations HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:02] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:02] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:03] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:03] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:03] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:04] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:04] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:05] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:05] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:05] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:17:05] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:05] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:05] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:05] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:05] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:06] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:06] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:06] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:06] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:06] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:17:06] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:06] "GET / HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: None
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:06] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:17:06] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:06] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:07] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:07] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:17:07] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:17:07] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:07] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:07] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:17:07] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:07] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:07] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:08] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:08] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:08] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:09] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Requested endpoint: snmp.set_oid
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:09] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Requested endpoint: snmp.set_oid
+Requested endpoint: snmp.set_oid
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Is user authenticated True
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:09] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:09] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:10] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:10] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:10] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Requested endpoint: snmp.snmp_operations
+Requested endpoint: snmp.set_oid
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Is user authenticated True
+Requested endpoint: snmp.snmp_operations
+192.168.0.132 - - [27/Apr/2024 20:17:10] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:10] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:10] "POST /snmp/set HTTP/1.1" 200 -
+Is user authenticated True
+Requested endpoint: snmp.set_oid
+192.168.0.132 - - [27/Apr/2024 20:17:10] "POST /snmp/set HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:10] "GET /snmp/operations HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:10] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+Requested endpoint: snmp.set_oid
+192.168.0.132 - - [27/Apr/2024 20:17:11] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+Requested endpoint: snmp.set_oid
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:11] "GET /snmp/operations HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:11] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Requested endpoint: snmp.set_oid
+192.168.0.132 - - [27/Apr/2024 20:17:11] "POST /snmp/set HTTP/1.1" 200 -
+Is user authenticated True
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:11] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:12] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:12] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:12] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:12] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:12] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:12] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:12] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:12] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:12] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:13] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:13] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:13] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:13] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:13] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:13] "POST /snmp/set HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:13] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:14] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:14] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:14] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.set_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:14] "POST /snmp/set HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:18] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:18] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:23] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:23] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:24] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:24] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:27] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:27] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:30] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:30] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:32] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:32] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:32] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:32] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:32] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:32] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:33] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:33] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:33] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:33] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:35] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:35] "POST /snmp/walk HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:17:35] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:35] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:35] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:36] "GET /snmp/operations HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:36] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:36] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:36] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:36] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+Is user authenticated True
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:37] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:37] "GET /snmp/operations HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:37] "POST /snmp/walk HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/usr/local/lib/python3.10/dist-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/snmp/routes.py", line 58, in walk_oid
+    os.remove(file_path)  # This ensures the file is removed whether db commit succeeds or fails
+FileNotFoundError: [Errno 2] No such file or directory: '192_168_0_185_Walker_1_3_6_1_2_1_1_5_27_04_2024_20:17:36.txt'
+192.168.0.132 - - [27/Apr/2024 20:17:37] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:37] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:37] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:37] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:37] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:37] "GET /snmp/operations HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:37] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:37] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:37] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+192.168.0.132 - - [27/Apr/2024 20:17:37] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:38] "POST /snmp/walk HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:17:38] "POST /snmp/walk HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/usr/local/lib/python3.10/dist-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/snmp/routes.py", line 58, in walk_oid
+    os.remove(file_path)  # This ensures the file is removed whether db commit succeeds or fails
+FileNotFoundError: [Errno 2] No such file or directory: '192_168_0_185_Walker_1_3_6_1_2_1_1_5_27_04_2024_20:17:37.txt'
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:38] "POST /snmp/walk HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/usr/local/lib/python3.10/dist-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/snmp/routes.py", line 58, in walk_oid
+    os.remove(file_path)  # This ensures the file is removed whether db commit succeeds or fails
+FileNotFoundError: [Errno 2] No such file or directory: '192_168_0_185_Walker_1_3_6_1_2_1_1_5_27_04_2024_20:17:37.txt'
+192.168.0.132 - - [27/Apr/2024 20:17:38] "GET /snmp/operations HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:38] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:38] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:38] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:38] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:38] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:38] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+192.168.0.132 - - [27/Apr/2024 20:17:38] "POST /snmp/walk HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:17:38] "POST /snmp/walk HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/usr/local/lib/python3.10/dist-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/snmp/routes.py", line 58, in walk_oid
+    os.remove(file_path)  # This ensures the file is removed whether db commit succeeds or fails
+FileNotFoundError: [Errno 2] No such file or directory: '192_168_0_185_Walker_1_3_6_1_2_1_1_5_27_04_2024_20:17:38.txt'
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:38] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:38] "GET /snmp/operations HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:38] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:39] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:39] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+192.168.0.132 - - [27/Apr/2024 20:17:39] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:39] "POST /snmp/walk HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:17:39] "POST /snmp/walk HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/usr/local/lib/python3.10/dist-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/snmp/routes.py", line 58, in walk_oid
+    os.remove(file_path)  # This ensures the file is removed whether db commit succeeds or fails
+FileNotFoundError: [Errno 2] No such file or directory: '192_168_0_185_Walker_1_3_6_1_2_1_1_5_27_04_2024_20:17:39.txt'
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:39] "GET /snmp/operations HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:39] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:39] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+192.168.0.132 - - [27/Apr/2024 20:17:39] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:39] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:39] "POST /snmp/walk HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:17:39] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:40] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:40] "GET /snmp/operations HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:40] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+Requested endpoint: snmp.walk_oid
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+Is user authenticated True
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:41] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:41] "GET /snmp/operations HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:41] "POST /snmp/walk HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/usr/local/lib/python3.10/dist-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/snmp/routes.py", line 58, in walk_oid
+    os.remove(file_path)  # This ensures the file is removed whether db commit succeeds or fails
+FileNotFoundError: [Errno 2] No such file or directory: '192_168_0_185_Walker_1_3_6_1_2_1_1_5_27_04_2024_20:17:40.txt'
+192.168.0.132 - - [27/Apr/2024 20:17:41] "POST /snmp/walk HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/usr/local/lib/python3.10/dist-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/snmp/routes.py", line 58, in walk_oid
+    os.remove(file_path)  # This ensures the file is removed whether db commit succeeds or fails
+FileNotFoundError: [Errno 2] No such file or directory: '192_168_0_185_Walker_1_3_6_1_2_1_1_5_27_04_2024_20:17:40.txt'
+192.168.0.132 - - [27/Apr/2024 20:17:41] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:41] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:41] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:41] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:41] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:41] "GET /snmp/operations HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:41] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:41] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:41] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:41] "GET /snmp/operations HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:41] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:42] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:42] "GET /snmp/operations HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:42] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+192.168.0.132 - - [27/Apr/2024 20:17:42] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:42] "POST /snmp/walk HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/usr/local/lib/python3.10/dist-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/snmp/routes.py", line 58, in walk_oid
+    os.remove(file_path)  # This ensures the file is removed whether db commit succeeds or fails
+FileNotFoundError: [Errno 2] No such file or directory: '192_168_0_185_Walker_1_3_6_1_2_1_1_5_27_04_2024_20:17:42.txt'
+192.168.0.132 - - [27/Apr/2024 20:17:42] "GET /snmp/operations HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:42] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:42] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:42] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:42] "GET /snmp/operations HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:42] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:42] "POST /snmp/walk HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/usr/local/lib/python3.10/dist-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/snmp/routes.py", line 58, in walk_oid
+    os.remove(file_path)  # This ensures the file is removed whether db commit succeeds or fails
+FileNotFoundError: [Errno 2] No such file or directory: '192_168_0_185_Walker_1_3_6_1_2_1_1_5_27_04_2024_20:17:42.txt'
+192.168.0.132 - - [27/Apr/2024 20:17:42] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:42] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:42] "POST /snmp/walk HTTP/1.1" 500 -
+192.168.0.132 - - [27/Apr/2024 20:17:42] "POST /snmp/walk HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/usr/local/lib/python3.10/dist-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/snmp/routes.py", line 58, in walk_oid
+    os.remove(file_path)  # This ensures the file is removed whether db commit succeeds or fails
+FileNotFoundError: [Errno 2] No such file or directory: '192_168_0_185_Walker_1_3_6_1_2_1_1_5_27_04_2024_20:17:42.txt'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/usr/local/lib/python3.10/dist-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/snmp/routes.py", line 58, in walk_oid
+    os.remove(file_path)  # This ensures the file is removed whether db commit succeeds or fails
+FileNotFoundError: [Errno 2] No such file or directory: '192_168_0_185_Walker_1_3_6_1_2_1_1_5_27_04_2024_20:17:42.txt'
+192.168.0.132 - - [27/Apr/2024 20:17:42] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:43] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:43] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+192.168.0.132 - - [27/Apr/2024 20:17:43] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:43] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:43] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:43] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:43] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+192.168.0.132 - - [27/Apr/2024 20:17:43] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:43] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.walk_oid
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:43] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.walk_oid
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:43] "GET /snmp/operations HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:43] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:43] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+192.168.0.132 - - [27/Apr/2024 20:17:43] "POST /snmp/walk HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:17:43] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:43] "GET /snmp/operations HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:43] "POST /snmp/walk HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/usr/local/lib/python3.10/dist-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/snmp/routes.py", line 58, in walk_oid
+    os.remove(file_path)  # This ensures the file is removed whether db commit succeeds or fails
+FileNotFoundError: [Errno 2] No such file or directory: '192_168_0_185_Walker_1_3_6_1_2_1_1_5_27_04_2024_20:17:43.txt'
+192.168.0.132 - - [27/Apr/2024 20:17:43] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:43] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:43] "POST /snmp/walk HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/usr/local/lib/python3.10/dist-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/snmp/routes.py", line 58, in walk_oid
+    os.remove(file_path)  # This ensures the file is removed whether db commit succeeds or fails
+FileNotFoundError: [Errno 2] No such file or directory: '192_168_0_185_Walker_1_3_6_1_2_1_1_5_27_04_2024_20:17:43.txt'
+192.168.0.132 - - [27/Apr/2024 20:17:43] "POST /snmp/walk HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/usr/local/lib/python3.10/dist-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/snmp/routes.py", line 58, in walk_oid
+    os.remove(file_path)  # This ensures the file is removed whether db commit succeeds or fails
+FileNotFoundError: [Errno 2] No such file or directory: '192_168_0_185_Walker_1_3_6_1_2_1_1_5_27_04_2024_20:17:43.txt'
+192.168.0.132 - - [27/Apr/2024 20:17:43] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:43] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:43] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:43] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:44] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:44] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:44] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:44] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+192.168.0.132 - - [27/Apr/2024 20:17:44] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+192.168.0.132 - - [27/Apr/2024 20:17:44] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:45] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:45] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:45] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:45] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:46] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:46] "GET /snmp/operations HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:46] "POST /snmp/walk HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/usr/local/lib/python3.10/dist-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/snmp/routes.py", line 58, in walk_oid
+    os.remove(file_path)  # This ensures the file is removed whether db commit succeeds or fails
+FileNotFoundError: [Errno 2] No such file or directory: '192_168_0_185_Walker_1_3_6_1_2_1_1_5_27_04_2024_20:17:46.txt'
+192.168.0.132 - - [27/Apr/2024 20:17:46] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:46] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:46] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:46] "GET /snmp/operations HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:46] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:46] "POST /snmp/walk HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/usr/local/lib/python3.10/dist-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/snmp/routes.py", line 58, in walk_oid
+    os.remove(file_path)  # This ensures the file is removed whether db commit succeeds or fails
+FileNotFoundError: [Errno 2] No such file or directory: '192_168_0_185_Walker_1_3_6_1_2_1_1_5_27_04_2024_20:17:46.txt'
+192.168.0.132 - - [27/Apr/2024 20:17:46] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:46] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:46] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:47] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:47] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+192.168.0.132 - - [27/Apr/2024 20:17:47] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:47] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:47] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:47] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:47] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:47] "GET /snmp/operations HTTP/1.1" 200 -
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+Requested endpoint: snmp.walk_oid
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:48] "POST /snmp/walk HTTP/1.1" 302 -
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:17:48] "POST /snmp/walk HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:17:48] "GET /snmp/operations HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:48] "POST /snmp/walk HTTP/1.1" 500 -
+192.168.0.132 - - [27/Apr/2024 20:17:48] "POST /snmp/walk HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/usr/local/lib/python3.10/dist-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/snmp/routes.py", line 58, in walk_oid
+    os.remove(file_path)  # This ensures the file is removed whether db commit succeeds or fails
+FileNotFoundError: [Errno 2] No such file or directory: '192_168_0_185_Walker_1_3_6_1_2_1_1_5_27_04_2024_20:17:47.txt'
+Requested endpoint: snmp.snmp_operations
+Is user authenticated True
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/usr/local/lib/python3.10/dist-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/snmp/routes.py", line 58, in walk_oid
+    os.remove(file_path)  # This ensures the file is removed whether db commit succeeds or fails
+FileNotFoundError: [Errno 2] No such file or directory: '192_168_0_185_Walker_1_3_6_1_2_1_1_5_27_04_2024_20:17:47.txt'
+192.168.0.132 - - [27/Apr/2024 20:17:48] "GET /snmp/operations HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:48] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:48] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:48] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:48] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:48] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:48] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:17:49] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+192.168.0.132 - - [27/Apr/2024 20:17:49] "GET /snmp/walk?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -

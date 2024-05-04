@@ -26,6 +26,13 @@
                         <div id="collapse{{ loop.index }}" class="accordion-collapse collapse" aria-labelledby="heading{{ loop.index }}" data-bs-parent="#deviceAccordion">
                             <div class="accordion-body">
                                 <p><strong>Server String:</strong> {{ device['Server String'] }}</p>
+                                <p><strong>Device Type:</strong> {{ device['Device Type'] | default('N/A') }}</p>
+                                <p><strong>Friendly Name:</strong> {{ device['Friendly Name'] | default('N/A') }}</p>
+                                <p><strong>Manufacturer:</strong> {{ device['Manufacturer'] | default('N/A') }}</p>
+                                <p><strong>Manufacturer URL:</strong> {{ device['Manufacturer URL'] | default('N/A') }}</p>
+                                <p><strong>Model Description:</strong> {{ device['Model Description'] | default('N/A') }}</p>
+                                <p><strong>Model Name:</strong> {{ device['Model Name'] | default('N/A') }}</p>
+                                <p><strong>Model Number:</strong> {{ device['Model Number'] | default('N/A') }}</p>
                                 <h4>Services</h4>
                                 {% for service in device['Services'] %}
                                     <div class="mb-2">

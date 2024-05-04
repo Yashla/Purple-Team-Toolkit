@@ -170,19 +170,13 @@ class NetworkScanner:
                 cvss_v3_score = row.find('a', {'data-testid': lambda x: x and x.startswith('vuln-cvss3-link')}).text.strip()
                 cvss_v3_label = row.find('a', {'data-testid': lambda x: x and x.startswith('vuln-cvss3-link')})['class'][1]
                 
-                # Check if the CVE already exists
                 existing_cve = CVE.query.filter_by(cve_id=cve_id).first()
                 if not existing_cve:
-                    new_cve = CVE(
-                        cve_id=cve_id,
-                        summary=summary,
-                        cvss_v3_score=cvss_v3_score,
-                        cvss_v3_label=cvss_v3_label
-                    )
+                    new_cve = CVE(cve_id=cve_id, summary=summary, cvss_v3_score=cvss_v3_score, cvss_v3_label=cvss_v3_label)
                     db.session.add(new_cve)
-                    db.session.flush()  
-
-              
+                    db.session.flush()  # Ensure new_cve is added to session and has an id
+                
+                # Check if the device is already linked with the CVE
                 existing_device_cve = DeviceCVE.query.filter_by(device_id=device_id, cve_id=cve_id).first()
                 if not existing_device_cve:
                     new_device_cve = DeviceCVE(device_id=device_id, cve_id=cve_id)
@@ -190,33 +184,31 @@ class NetworkScanner:
 
                 sleep(3) 
         
-        db.session.commit()  
+        db.session.commit()
+
 
 
     def test_ssh_connection(ip, username, password):
-        """Test SSH connection to a given device."""
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         try:
             ssh.connect(ip, username=username, password=password, timeout=5)
             ssh.close()
-            return True, "it works."
+            return True, "SSH connection successful."
         except paramiko.AuthenticationException:
-            print(f"SSH Authentication failed for {ip}")
-            return False
+            return False, "SSH Authentication failed for IP: {}".format(ip)
         except Exception as e:
-            print(f"SSH Connection to {ip} failed: {str(e)}")
-            return False
+            return False, "SSH connection to IP: {} failed with error: {}".format(ip, str(e))
 
     def test_windows_connection(ip, username, password):
         session = winrm.Session(f'http://{ip}:5985/wsman', auth=(username, password), transport='ntlm')
         try:
-            # Example command
-            r = session.run_cmd('echo test')
+            # Test command to ensure connectivity
+            r = session.run_cmd('echo WinRM_test')
             if r.status_code == 0:
                 return True, "WinRM connection successful."
             else:
-                return False, "WinRM connection failed."
+                return False, f"WinRM test command failed with status code: {r.status_code}"
         except Exception as e:
             return False, f"WinRM connection failed: {e}"
 

@@ -1,0 +1,1038 @@
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:51] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:51] "GET /login HTTP/1.1" 302 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:51] "GET /login HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:51] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:51] "GET /login HTTP/1.1" 302 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:51] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:51] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:51] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:05:51] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:51] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:52] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:52] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:52] "GET /login HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:52] "GET /auth/login HTTP/1.1" 200 -
+Is user authenticated True
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Service SONY KD-55XH9005._airplay._tcp.local. of type _airplay._tcp.local. updated.
+Service Yash’s MacBook Air._airplay._tcp.local. of type _airplay._tcp.local. updated.
+Service Yash’s MacBook Air._airplay._tcp.local. of type _airplay._tcp.local. updated.
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Is user authenticated True
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:53] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:53] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:53] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:53] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:53] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:53] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:55] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:55] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:55] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:55] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:55] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:55] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Requested endpoint: None
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:55] "GET /favicon.ico HTTP/1.1" 302 -
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:55] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:55] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:55] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:55] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:55] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:56] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:56] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:56] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:56] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:56] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:56] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:56] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:56] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:56] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:56] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:57] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:57] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:57] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:57] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:57] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:57] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:58] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:58] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:58] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:58] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:58] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:58] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:58] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:58] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:59] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:59] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:59] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:59] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:59] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:59] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:59] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:59] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:05:59] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:05:59] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:06:00] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:06:00] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:06:00] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:06:00] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:06:00] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:01] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:06:01] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:01] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:01] "POST /auth/login HTTP/1.1" 302 -
+Is user authenticated True
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:06:02] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:02] "POST /auth/login HTTP/1.1" 302 -
+Is user authenticated True
+Requested endpoint: main.index
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:06:02] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:02] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:02] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:02] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:06:02] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:02] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:06:02] "POST /auth/login HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:06:02] "POST /auth/login HTTP/1.1" 302 -
+Is user authenticated True
+Requested endpoint: main.index
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:06:02] "POST /auth/login HTTP/1.1" 302 -
+Is user authenticated True
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:06:02] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:02] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:02] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Service Yash’s MacBook Air._airplay._tcp.local. of type _airplay._tcp.local. updated.
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /auth/login HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /auth/login HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /auth/login HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /auth/login HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: main.index
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /auth/login HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /auth/login HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /auth/login HTTP/1.1" 302 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /auth/login HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /auth/login HTTP/1.1" 302 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /auth/login HTTP/1.1" 302 -
+Is user authenticated True
+Is user authenticated True
+Is user authenticated True
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+Requested endpoint: main.index
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /auth/login HTTP/1.1" 302 -
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /auth/login HTTP/1.1" 302 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /auth/login HTTP/1.1" 302 -
+Is user authenticated True
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET /favicon.ico HTTP/1.1" 404 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /auth/login HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:06:03] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:03] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: main.index
+Requested endpoint: main.index
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Requested endpoint: None
+Requested endpoint: None
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Requested endpoint: None
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Requested endpoint: None
+Requested endpoint: None
+Requested endpoint: None
+Is user authenticated True
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Requested endpoint: main.index
+Is user authenticated True
+Is user authenticated True
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:06:04] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:04] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:04] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:04] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:06:05] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:05] "GET / HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:06:05] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:05] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:05] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:06:05] "POST /auth/login HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:06:05] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:05] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:05] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:05] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: None
+Requested endpoint: main.index
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:05] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:05] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:05] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:05] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:05] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:05] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:06] "GET / HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:06] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:06] "GET / HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET / HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET / HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET / HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Requested endpoint: main.index
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Requested endpoint: main.index
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:07] "GET / HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:08] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:08] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:08] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+Requested endpoint: main.index
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:08] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:08] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:08] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:08] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:08] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:08] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:08] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:08] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:08] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:08] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:08] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:08] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:08] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:08] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:08] "GET / HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:08] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:08] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:08] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:08] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:09] "GET /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Is user authenticated True
+Requested endpoint: mdns.mdns_discovery
+192.168.0.132 - - [27/Apr/2024 20:06:10] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:11] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Service Yash’s MacBook Air._airplay._tcp.local. of type _airplay._tcp.local. updated.
+192.168.0.132 - - [27/Apr/2024 20:06:11] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:11] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Requested endpoint: mdns.mdns_discovery
+192.168.0.132 - - [27/Apr/2024 20:06:12] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:12] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:12] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:12] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:12] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Requested endpoint: mdns.mdns_discovery
+Is user authenticated True
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+Requested endpoint: mdns.mdns_discovery
+192.168.0.132 - - [27/Apr/2024 20:06:20] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:20] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:20] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:20] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:20] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:20] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:20] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+Service SONY KD-55XH9005._airplay._tcp.local. of type _airplay._tcp.local. updated.
+192.168.0.132 - - [27/Apr/2024 20:06:21] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+Service Yash’s MacBook Air._airplay._tcp.local. of type _airplay._tcp.local. updated.
+192.168.0.132 - - [27/Apr/2024 20:06:21] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:22] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:22] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:22] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:23] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:23] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:23] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:30] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:30] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:30] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:30] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:30] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:30] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:06:31] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+Service SONY KD-55XH9005._airplay._tcp.local. of type _airplay._tcp.local. updated.
+Service Yash’s MacBook Air._airplay._tcp.local. of type _airplay._tcp.local. updated.
+192.168.0.132 - - [27/Apr/2024 20:06:31] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:31] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:32] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:32] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:32] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:33] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:33] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:33] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:40] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:40] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:40] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:40] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:40] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:06:40] "POST /mdns/mdns_discovery/results HTTP/1.1" 200 -

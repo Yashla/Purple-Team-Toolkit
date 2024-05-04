@@ -16,6 +16,12 @@ class MyListener(ServiceListener):
                 'properties': info.properties
             }
             self.services.append(service_info)
+            
+    def update_service(self, zeroconf, service_type, name):
+        print(f"Service {name} of type {service_type} updated.")
+
+    def remove_service(self, zeroconf, service_type, name):
+        print(f"Service {name} of type {service_type} removed.")
 
 def discover_services(service_types, duration=10):
     discovered_services = []

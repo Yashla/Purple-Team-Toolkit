@@ -1,0 +1,1035 @@
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:52] "GET / HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:52] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+192.168.0.132 - - [27/Apr/2024 20:13:52] "POST /auth/login HTTP/1.1" 302 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:52] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: main.index
+Requested endpoint: auth.login
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:52] "GET / HTTP/1.1" 200 -
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:13:52] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:52] "POST /auth/login HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:13:52] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:52] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:52] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:13:52] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:52] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:52] "GET / HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:52] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:13:52] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: None
+Is user authenticated True
+Requested endpoint: main.index
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:52] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:13:52] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:13:52] "POST /auth/login HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:13:52] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:52] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Requested endpoint: main.index
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:52] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:13:52] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:52] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:13:52] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:52] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:52] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:13:52] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:52] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET / HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET / HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:13:53] "POST /auth/login HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:13:53] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET / HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:53] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: None
+Requested endpoint: None
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:13:53] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Requested endpoint: main.index
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:13:53] "POST /auth/login HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:13:53] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:53] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:54] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:54] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:54] "GET / HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:54] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:54] "GET / HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:54] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:54] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:54] "GET / HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:54] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:54] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:54] "GET / HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:54] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET / HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+Requested endpoint: ssdp.ssdp_spoofer
+Requested endpoint: ssdp.ssdp_spoofer
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET / HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: main.index
+Requested endpoint: main.index
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Requested endpoint: main.index
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Requested endpoint: main.index
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET / HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET / HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+Requested endpoint: ssdp.ssdp_spoofer
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET / HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Requested endpoint: main.index
+Is user authenticated True
+Is user authenticated True
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET / HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:55] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Requested endpoint: main.index
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET / HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET / HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET / HTTP/1.1" 200 -
+Requested endpoint: ssdp.start_ssdp
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:13:56] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET / HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:13:56] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:57] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+Requested endpoint: ssdp.ssdp_spoofer
+192.168.0.132 - - [27/Apr/2024 20:13:57] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:57] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:57] "GET / HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:57] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:57] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:57] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:57] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:57] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:57] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:57] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:57] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:57] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:57] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+Requested endpoint: ssdp.ssdp_spoofer
+192.168.0.132 - - [27/Apr/2024 20:13:58] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.start_ssdp
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:13:58] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:58] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:13:58] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:59] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:13:59] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:59] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:59] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:59] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:59] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:59] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:59] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:59] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+Is user authenticated True
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:59] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:13:59] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:13:59] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:59] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:59] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:59] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:13:59] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:59] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:59] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:59] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:59] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:59] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Requested endpoint: ssdp.start_ssdp
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:59] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:59] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:13:59] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:59] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:13:59] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:59] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:13:59] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:00] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:00] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.start_ssdp
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:00] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:14:00] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:00] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:00] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:00] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.start_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:00] "POST /ssdp/start_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:00] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:00] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:07] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+File /home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/ssdp/essdp/evil/ssdp_spoofer_results_2024-04-27_20-13-37.txt deleted successfully.
+192.168.0.132 - - [27/Apr/2024 20:14:07] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:08] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:08] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:08] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:08] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:08] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:08] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:08] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:09] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:09] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:09] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:09] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:09] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:09] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:10] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:10] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:10] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:10] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:11] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:11] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:12] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:12] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:15] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:15] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:19] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:19] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:19] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:19] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:19] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:19] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:23] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:23] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:26] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:26] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:26] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:26] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:26] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:26] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.stop_ssdp
+Requested endpoint: ssdp.stop_ssdp
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:27] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:14:27] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:14:27] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:27] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:27] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:27] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:27] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:14:27] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:27] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:27] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:27] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:27] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:28] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:28] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:28] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:28] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:28] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:28] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:28] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:28] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:28] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:28] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:28] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:28] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:28] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:14:28] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:28] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:28] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:28] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:14:29] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:14:29] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:14:29] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:29] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:30] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:30] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:30] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:30] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:30] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:14:30] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:30] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:30] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:14:30] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:30] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:30] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:30] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:30] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:30] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:30] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:30] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:14:30] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:30] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:30] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:30] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:30] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:30] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+Requested endpoint: ssdp.stop_ssdp
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:31] "POST /ssdp/stop_ssdp HTTP/1.1" 302 -
+Requested endpoint: ssdp.ssdp_spoofer
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:14:31] "GET /ssdp/ssdp_spoofer HTTP/1.1" 200 -
+
+
+

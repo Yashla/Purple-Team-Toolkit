@@ -1,0 +1,993 @@
+192.168.0.132 - - [27/Apr/2024 20:08:26] "GET /login HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:26] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: upnp_bp.discover
+Is user authenticated True
+[!] Failed to load http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml due to HTTPConnectionPool(host='192.168.0.50', port=33317): Read timed out. (read timeout=2)
+192.168.0.132 - - [27/Apr/2024 20:08:26] "GET /upnptest/discover HTTP/1.1" 200 -
+[!] Failed to load http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml due to HTTPConnectionPool(host='192.168.0.50', port=33317): Read timed out. (read timeout=2)
+192.168.0.132 - - [27/Apr/2024 20:08:26] "GET /upnptest/discover HTTP/1.1" 200 -
+Requested endpoint: upnp_bp.discover
+Is user authenticated True
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:26] "GET /auth/login HTTP/1.1" 200 -
+[!] Failed to load http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml due to HTTPConnectionPool(host='192.168.0.50', port=33317): Read timed out. (read timeout=2)
+192.168.0.132 - - [27/Apr/2024 20:08:26] "GET /upnptest/discover HTTP/1.1" 200 -
+[!] Failed to load http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml due to HTTPConnectionPool(host='192.168.0.50', port=33317): Read timed out. (read timeout=2)
+192.168.0.132 - - [27/Apr/2024 20:08:26] "GET /upnptest/discover HTTP/1.1" 200 -
+[!] Failed to load http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml due to HTTPConnectionPool(host='192.168.0.50', port=33317): Read timed out. (read timeout=2)
+192.168.0.132 - - [27/Apr/2024 20:08:27] "GET /upnptest/discover HTTP/1.1" 200 -
+[!] Failed to load http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml due to HTTPConnectionPool(host='192.168.0.50', port=33317): Read timed out. (read timeout=2)
+192.168.0.132 - - [27/Apr/2024 20:08:27] "GET /upnptest/discover HTTP/1.1" 200 -
+[!] Failed to load http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml due to HTTPConnectionPool(host='192.168.0.50', port=33317): Read timed out. (read timeout=2)
+192.168.0.132 - - [27/Apr/2024 20:08:27] "GET /upnptest/discover HTTP/1.1" 200 -
+[!] Failed to load http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml due to HTTPConnectionPool(host='192.168.0.50', port=33317): Read timed out. (read timeout=2)
+192.168.0.132 - - [27/Apr/2024 20:08:27] "GET /upnptest/discover HTTP/1.1" 200 -
+[!] Failed to load http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml due to HTTPConnectionPool(host='192.168.0.50', port=33317): Read timed out. (read timeout=2)
+192.168.0.132 - - [27/Apr/2024 20:08:27] "GET /upnptest/discover HTTP/1.1" 200 -
+[!] Failed to load http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml due to HTTPConnectionPool(host='192.168.0.50', port=33317): Read timed out. (read timeout=2)
+192.168.0.132 - - [27/Apr/2024 20:08:28] "GET /upnptest/discover HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:28] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:28] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:28] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+192.168.0.132 - - [27/Apr/2024 20:08:28] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:28] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:28] "GET /favicon.ico HTTP/1.1" 404 -
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:28] "GET / HTTP/1.1" 200 -
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+192.168.0.132 - - [27/Apr/2024 20:08:28] "GET /upnptest/discover HTTP/1.1" 200 -
+Requested endpoint: upnp_bp.discover
+Is user authenticated True
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:28] "GET / HTTP/1.1" 200 -
+Requested endpoint: upnp_bp.discover
+Is user authenticated True
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:28] "GET / HTTP/1.1" 200 -
+Requested endpoint: upnp_bp.discover
+Is user authenticated True
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:29] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:29] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:29] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:29] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:29] "GET /favicon.ico HTTP/1.1" 404 -
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:30] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:30] "GET /auth/login HTTP/1.1" 200 -
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+192.168.0.132 - - [27/Apr/2024 20:08:30] "GET /upnptest/discover HTTP/1.1" 200 -
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:30] "GET /favicon.ico HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:08:30] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:30] "GET / HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:30] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:30] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:30] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:30] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:30] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:30] "GET /auth/login HTTP/1.1" 200 -
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:30] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:30] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:30] "GET /favicon.ico HTTP/1.1" 302 -
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:30] "GET /auth/login HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:08:30] "GET /upnptest/discover HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:30] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:30] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:30] "GET /favicon.ico HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:08:30] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:30] "GET / HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:30] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET /auth/login HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:08:31] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET / HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET /auth/login HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:08:31] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET / HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:31] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET / HTTP/1.1" 200 -
+Requested endpoint: upnp_bp.discover
+Is user authenticated True
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: upnp_bp.discover
+192.168.0.132 - - [27/Apr/2024 20:08:31] "POST /auth/login HTTP/1.1" 302 -
+Is user authenticated True
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:31] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:32] "POST /auth/login HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:08:32] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET /favicon.ico HTTP/1.1" 302 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET /favicon.ico HTTP/1.1" 404 -
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET /favicon.ico HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:08:32] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:08:32] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET /favicon.ico HTTP/1.1" 404 -
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET / HTTP/1.1" 200 -
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET /favicon.ico HTTP/1.1" 302 -
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET /auth/login HTTP/1.1" 200 -
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET /auth/login HTTP/1.1" 200 -
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET /upnptest/discover HTTP/1.1" 200 -
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET /auth/login HTTP/1.1" 200 -
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET /upnptest/discover HTTP/1.1" 200 -
+Requested endpoint: upnp_bp.discover
+Is user authenticated True
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:32] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+192.168.0.132 - - [27/Apr/2024 20:08:33] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:33] "GET / HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+192.168.0.132 - - [27/Apr/2024 20:08:33] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+Requested endpoint: None
+192.168.0.132 - - [27/Apr/2024 20:08:33] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:33] "POST /auth/login HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:08:33] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:33] "GET / HTTP/1.1" 200 -
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+192.168.0.132 - - [27/Apr/2024 20:08:33] "GET /upnptest/discover HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:08:33] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:33] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:08:33] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:33] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:33] "POST /auth/login HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:08:33] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:08:33] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: None
+Is user authenticated True
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:08:33] "GET /favicon.ico HTTP/1.1" 404 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:33] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:33] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:08:33] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: None
+Is user authenticated True
+Requested endpoint: None
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:33] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:08:33] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:33] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:33] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:33] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:33] "GET /favicon.ico HTTP/1.1" 302 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:33] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:33] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:33] "GET / HTTP/1.1" 200 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:33] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:33] "GET / HTTP/1.1" 200 -
+Requested endpoint: upnp_bp.discover
+Is user authenticated True
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:33] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: main.index
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:08:34] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET / HTTP/1.1" 200 -
+Requested endpoint: upnp_bp.discover
+Is user authenticated True
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET /favicon.ico HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:08:34] "POST /auth/login HTTP/1.1" 302 -
+192.168.0.132 - - [27/Apr/2024 20:08:34] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:08:34] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+192.168.0.132 - - [27/Apr/2024 20:08:34] "POST /auth/login HTTP/1.1" 302 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated False
+Redirecting to login page.
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET /favicon.ico HTTP/1.1" 302 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET /auth/login HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET / HTTP/1.1" 200 -
+Requested endpoint: upnp_bp.discover
+Is user authenticated True
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+Requested endpoint: upnp_bp.discover
+Is user authenticated True
+Requested endpoint: auth.login
+Is user authenticated False
+Accessing open endpoint: auth.login
+192.168.0.132 - - [27/Apr/2024 20:08:34] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET / HTTP/1.1" 200 -
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.0.132 - - [27/Apr/2024 20:08:34] "POST /auth/login HTTP/1.1" 302 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET / HTTP/1.1" 200 -
+Requested endpoint: upnp_bp.discover
+Is user authenticated True
+Requested endpoint: None
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET /favicon.ico HTTP/1.1" 404 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:34] "GET / HTTP/1.1" 200 -
+Requested endpoint: upnp_bp.discover
+Is user authenticated True
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+Requested endpoint: main.index
+Is user authenticated True
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+192.168.0.132 - - [27/Apr/2024 20:08:35] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:35] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:08:35] "GET /upnptest/discover HTTP/1.1" 200 -
+Requested endpoint: upnp_bp.discover
+Is user authenticated True
+Requested endpoint: upnp_bp.discover
+Is user authenticated True
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:35] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:35] "GET / HTTP/1.1" 200 -
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+Requested endpoint: upnp_bp.discover
+Is user authenticated True
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+Requested endpoint: upnp_bp.discover
+Is user authenticated True
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+192.168.0.132 - - [27/Apr/2024 20:08:35] "GET /upnptest/discover HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:36] "GET / HTTP/1.1" 200 -
+Requested endpoint: upnp_bp.discover
+Is user authenticated True
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+Requested endpoint: main.index
+Requested endpoint: main.index
+Requested endpoint: main.index
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:36] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:08:36] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:36] "GET / HTTP/1.1" 200 -
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+Requested endpoint: main.index
+192.168.0.132 - - [27/Apr/2024 20:08:36] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:36] "GET / HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:08:36] "GET / HTTP/1.1" 200 -
+Requested endpoint: main.index
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:36] "GET / HTTP/1.1" 200 -
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+192.168.0.132 - - [27/Apr/2024 20:08:36] "GET /upnptest/discover HTTP/1.1" 200 -
+Requested endpoint: upnp_bp.discover
+Is user authenticated True
+Requested endpoint: upnp_bp.discover
+Is user authenticated True
+Requested endpoint: upnp_bp.discover
+Requested endpoint: upnp_bp.discover
+Requested endpoint: upnp_bp.discover
+Requested endpoint: upnp_bp.discover
+Is user authenticated True
+Is user authenticated True
+Requested endpoint: main.index
+Requested endpoint: upnp_bp.discover
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+Requested endpoint: main.index
+Requested endpoint: main.index
+Requested endpoint: main.index
+Requested endpoint: main.index
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+Requested endpoint: main.index
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+192.168.0.132 - - [27/Apr/2024 20:08:37] "GET /upnptest/discover HTTP/1.1" 200 -
+Is user authenticated True
+Requested endpoint: main.index
+Requested endpoint: main.index
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+192.168.0.132 - - [27/Apr/2024 20:08:38] "GET /upnptest/discover HTTP/1.1" 200 -
+Is user authenticated True
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+192.168.0.132 - - [27/Apr/2024 20:08:38] "GET /upnptest/discover HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:38] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+192.168.0.132 - - [27/Apr/2024 20:08:38] "GET /upnptest/discover HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:38] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:38] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:38] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:38] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:38] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:38] "GET / HTTP/1.1" 200 -
+Is user authenticated True
+192.168.0.132 - - [27/Apr/2024 20:08:38] "GET / HTTP/1.1" 200 -
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+Requested endpoint: upnp_bp.discover
+Is user authenticated True
+Requested endpoint: upnp_bp.discover
+Requested endpoint: upnp_bp.discover
+Requested endpoint: upnp_bp.discover
+Requested endpoint: upnp_bp.discover
+Requested endpoint: upnp_bp.discover
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+Requested endpoint: upnp_bp.discover
+Requested endpoint: upnp_bp.discover
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+192.168.0.132 - - [27/Apr/2024 20:08:39] "GET /upnptest/discover HTTP/1.1" 200 -
+Is user authenticated True
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+192.168.0.132 - - [27/Apr/2024 20:08:39] "GET /upnptest/discover HTTP/1.1" 200 -
+Is user authenticated True
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+192.168.0.132 - - [27/Apr/2024 20:08:39] "GET /upnptest/discover HTTP/1.1" 200 -
+Is user authenticated True
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+192.168.0.132 - - [27/Apr/2024 20:08:40] "GET /upnptest/discover HTTP/1.1" 200 -
+Is user authenticated True
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+192.168.0.132 - - [27/Apr/2024 20:08:40] "GET /upnptest/discover HTTP/1.1" 200 -
+Is user authenticated True
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+192.168.0.132 - - [27/Apr/2024 20:08:40] "GET /upnptest/discover HTTP/1.1" 200 -
+Is user authenticated True
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+192.168.0.132 - - [27/Apr/2024 20:08:41] "GET /upnptest/discover HTTP/1.1" 200 -
+Is user authenticated True
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+192.168.0.132 - - [27/Apr/2024 20:08:41] "GET /upnptest/discover HTTP/1.1" 200 -
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+[+] Loading http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml...
+192.168.0.132 - - [27/Apr/2024 20:08:42] "GET /upnptest/discover HTTP/1.1" 200 -
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+[+] Loading http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+[+] Loading http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml...
+192.168.0.132 - - [27/Apr/2024 20:08:42] "GET /upnptest/discover HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:08:42] "GET /upnptest/discover HTTP/1.1" 200 -
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+[+] Loading http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml...
+192.168.0.132 - - [27/Apr/2024 20:08:43] "GET /upnptest/discover HTTP/1.1" 200 -
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+[+] Loading http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml...
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+192.168.0.132 - - [27/Apr/2024 20:08:43] "GET /upnptest/discover HTTP/1.1" 200 -
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+[+] Loading http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+[+] Loading http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+[+] Loading http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml...
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+192.168.0.132 - - [27/Apr/2024 20:08:44] "GET /upnptest/discover HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:08:44] "GET /upnptest/discover HTTP/1.1" 200 -
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+192.168.0.132 - - [27/Apr/2024 20:08:44] "GET /upnptest/discover HTTP/1.1" 200 -
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+[+] Loading http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml...
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+[+] Loading http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+[+] Loading http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml...
+192.168.0.132 - - [27/Apr/2024 20:08:44] "GET /upnptest/discover HTTP/1.1" 200 -
+192.168.0.132 - - [27/Apr/2024 20:08:44] "GET /upnptest/discover HTTP/1.1" 200 -
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+192.168.0.132 - - [27/Apr/2024 20:08:44] "GET /upnptest/discover HTTP/1.1" 200 -
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+[+] Loading http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml...
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+192.168.0.132 - - [27/Apr/2024 20:08:44] "GET /upnptest/discover HTTP/1.1" 200 -
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+[+] Loading http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml...
+[+] Loading http://192.168.0.71:8008/ssdp/device-desc.xml...
+192.168.0.132 - - [27/Apr/2024 20:08:45] "GET /upnptest/discover HTTP/1.1" 200 -
+        [!] Failed to parse SCPD of http://192.168.0.71:8008/ssdp/notfound due to no element found: line 1, column 0
+[+] Loading http://192.168.0.71:52323/MediaRenderer.xml...
+[+] Loading http://192.168.0.1:5000/rootDesc.xml...
+[+] Loading http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml...
+        [!] Failed to parse SCPD of http://192.168.0.71:34708/DIALSCPD.xml due to no element found: line 1, column 0
+[!] Failed to load http://192.168.0.71:34708/sony/webapi/ssdp/dd.xml due to Failed to parse: http://192.168.0.71:34708http://192.168.0.71/sony/ircc/IRCCSCPD.xml
+[+] Loading http://192.168.0.50:33317/dev/45be5ce7-c88c-42ff-0000-000038b27980/desc.xml...
+192.168.0.132 - - [27/Apr/2024 20:08:45] "GET /upnptest/discover HTTP/1.1" 200 -
