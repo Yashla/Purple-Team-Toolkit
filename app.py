@@ -15,7 +15,7 @@ from models import User
 app = Flask(__name__)
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://phpmyadmin:2002@localhost/scan'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://yash:yash@mysql/scan'
 app.config['SECRET_KEY'] = 'your_secret_key'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 

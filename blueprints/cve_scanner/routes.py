@@ -49,7 +49,8 @@ def test_ssh():
 @cve_scanner.route('/scan', methods=['GET', 'POST'])
 @login_required
 def scan_network():
-    ip_command_output = subprocess.run(['ip', 'a'], stdout=subprocess.PIPE, text=True).stdout
+    #ip_command_output = subprocess.run(['ip', 'a'], stdout=subprocess.PIPE, text=True).stdout
+    
     
     if request.method == 'POST':
         subnet = request.form['subnet']
@@ -58,7 +59,7 @@ def scan_network():
         scanner.scan_mdns()
         scanner.refine_linux_array()
         return render_template('cve_scanner/scan.html', subnet=subnet, windows=scanner.windows_array, linux=scanner.linux_array, macbooks=scanner.macbook_array, scanned=True)
-    return render_template('cve_scanner/scan.html', scanned=False, ip_output=ip_command_output)
+    return render_template('cve_scanner/scan.html', scanned=False)#, ip_output=ip_command_output)
 
 
 @cve_scanner.route('/reset_db')

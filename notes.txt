@@ -1,0 +1,16 @@
+Docker commands :
+
+docker-compose up -d
+
+docker-compose down -v
+
+ip link show ens37
+
+sudo ip link set ens37 promisc on
+
+docker logs fyp-scan-devices-on-network-web-1
+
+docker network create -d macvlan \
+  --subnet=192.168.0.0/24 \
+  --gateway=192.168.0.1 \
+  -o parent=ens37 pub_net

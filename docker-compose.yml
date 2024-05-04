@@ -1,0 +1,33 @@
+version: '3.7'
+
+services:
+  web:
+    build: .
+    networks:
+      pub_net:
+        ipv4_address: 192.168.0.5 ##do change this to a ip address that can be used in your network 
+    volumes:
+      - .:/myapp
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: scan
+      MYSQL_USER: yash
+      MYSQL_PASSWORD: yash
+    networks:
+      pub_net:
+        ipv4_address: 192.168.0.6 ##do change this to a ip address that can be used in your network 
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./mysql-init:/docker-entrypoint-initdb.d
+
+networks:
+  pub_net:
+    external: true
+
+volumes:
+  mysql-data:

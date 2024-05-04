@@ -30,18 +30,18 @@ def start_ssdp():
         env['PYTHONUNBUFFERED'] = "1"
         
         # Start the subprocess with the modified environment
-        process = subprocess.Popen(# Make sure to change this path in your code below 
-            ['python3', '/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/ssdp/essdp/evil/evil_ssdp.py', 'ens37', '--template', 'scanner'],
+        process = subprocess.Popen(
+            ['python3', 'blueprints/ssdp/essdp/evil/evil_ssdp.py', 'eth0', '--template', 'scanner'],
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
             text=True,
-            env=env  # Pass the modified environment
+            env=env
         )
         
         # Define the path to the output file
         now = datetime.now()
         file_name = f"ssdp_spoofer_results_{now.strftime('%Y-%m-%d_%H-%M-%S')}.txt"
-        output_file_path_global = f"/home/yash/Documents/GitHub/FYP-scan-devices-on-network/blueprints/ssdp/essdp/evil/{file_name}"
+        output_file_path_global = f"blueprints/ssdp/essdp/{file_name}"
         
         # Start a thread to collect output from the subprocess
         threading.Thread(target=collect_output, args=(output_file_path_global,)).start()
