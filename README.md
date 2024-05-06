@@ -1,4 +1,3 @@
-
 # Purple Team Toolkit Docker Container Setup
 
 ## Prerequisites
@@ -47,3 +46,6 @@ docker-compose down
 ```
 
 Please ensure all IP addresses and network configurations are correctly set up in `docker-compose.yml` before starting the container.
+
+
+## Browse the Purple Team Toolkit on the IP address you configured.
