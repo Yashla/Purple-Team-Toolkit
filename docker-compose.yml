@@ -12,12 +12,12 @@ services:
       - mysql
 
   mysql:
-    image: mysql:5.7
+    image: mysql:5.7 # all database information is here.
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: scan
-      MYSQL_USER: yash
-      MYSQL_PASSWORD: yash
+      MYSQL_USER: yash # change if needed 
+      MYSQL_PASSWORD: yash # change if needed 
     networks:
       pub_net:
         ipv4_address: 192.168.0.6 ##do change this to a ip address that can be used in your network 

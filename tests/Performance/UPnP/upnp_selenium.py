@@ -26,8 +26,6 @@ def run_selenium_instance(instance_number):
         upnp_scan_button.click()
         time.sleep(40)
 
-    except Exception as e:
-        print(f"Instance {instance_number}: An exception occurred - {e}")
     finally:
         driver.quit()
 

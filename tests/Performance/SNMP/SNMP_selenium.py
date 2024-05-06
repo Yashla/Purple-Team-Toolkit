@@ -54,9 +54,6 @@ def run_selenium_instance(instance_number):
         start_walk_button.click()
         time.sleep(50)
 
-    except Exception as e:
-        print(f"Instance {instance_number}: An exception occurred - {e}")
-
     finally:
         driver.quit()
 num_instances = 10

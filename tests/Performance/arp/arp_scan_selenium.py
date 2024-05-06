@@ -37,10 +37,7 @@ def run_selenium_instance(instance_number):
         arp_scan_button.click()
         time.sleep(50)
 
-    except Exception as e:
-        print(f"Instance {instance_number}: An exception occurred - {e}")
     finally:
-        # Close the browser when done
         driver.quit()
 
 # Number of concurrent instances

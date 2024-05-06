@@ -32,8 +32,7 @@ def run_selenium_instance(instance_number):
         discover_services_button.click()
         time.sleep(40)
 
-    except Exception as e:
-        print(f"Instance {instance_number}: An exception occurred - {e}")
+
     finally:
         driver.quit()
 num_instances = 60

@@ -32,8 +32,6 @@ def run_selenium_instance(instance_number):
         stop_ssdp_button.click()
         time.sleep(60)
 
-    except Exception as e:
-        print(f"Instance {instance_number}: An exception occurred - {e}")
     finally:
         driver.quit()
 

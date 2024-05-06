@@ -8,7 +8,7 @@ class TestNetworkScanner(unittest.TestCase):
         # Device credentials for a Mac device
         device_ip = '192.168.0.132'  # Replace with the actual Mac device IP address
         device_username = 'Yash'  # Replace with the actual Mac username
-        device_password = 'Divali50?'  # Replace with the actual Mac password
+        device_password = 'test'  # Replace with the actual Mac password
 
         # Create a new device instance for a Mac device
         new_device = Device(
@@ -52,10 +52,9 @@ class TestNetworkScanner(unittest.TestCase):
 
     def test_get_windows_os_info(self):
         print("\nStarting test for Windows device...")
-        # Device credentials for a Windows device
         device_ip = '192.168.0.4'  # Replace with the actual Windows device IP address
         device_username = 'yash'  # Replace with the actual Windows username
-        device_password = '2002'  # Replace with the actual Windows password
+        device_password = 'test'  # Replace with the actual Windows password
 
         # Create a new device instance for a Windows device
         new_device = Device(
@@ -65,14 +64,14 @@ class TestNetworkScanner(unittest.TestCase):
             password=device_password
         )
 
-        # Call the method with the new_device instance
+
         vendor, product, version = NetworkScanner.get_windows_os_info(new_device)
 
-        # Print out the Vendor, Product, and Version information for Windows
+
         print("Windows Device:")
         print("Vendor:", vendor)
         print("Product:", product)
         print("Version:", version)
-# This allows the unit test to be run from the command line
+
 if __name__ == '__main__':
     unittest.main()
