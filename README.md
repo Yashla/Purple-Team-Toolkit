@@ -1,5 +1,5 @@
 
-# Flask Server Docker Container Setup
+# Purple Team Toolkit Docker Container Setup
 
 ## Prerequisites
 
@@ -19,13 +19,18 @@ curl -fsSL https://get.docker.com/ -o get-docker.sh && sudo sh get-docker.sh && 
 
 ## Network Configuration
 
-Modify the IP address settings in `docker-compose.yml` to match the network configuration:
+Modify the IP address settings in `docker-compose.yml` to match your specific network configuration requirements. Once done, configure the Docker network by typing the following commands:
 
 ```bash
 docker network create -d macvlan   --subnet=192.168.0.0/24 \ # Change as needed
   --gateway=192.168.0.1 \   # Change as needed
   -o parent=ens37 pub_net   # Change as needed
 ```
+
+### Steps:
+1. Open your `docker-compose.yml` file.
+2. Modify the IP address and network settings as required for your setup.
+3. Run the above command to create a Docker network.
 
 ## Running the Container
 
